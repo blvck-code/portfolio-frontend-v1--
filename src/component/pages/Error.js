@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import img from "../../img/bubble.png";
-import logo from '../../img/logo.png'
+import logo from "../../img/logo.png";
 
 export class Error extends Component {
   state = {
@@ -28,15 +28,14 @@ export class Error extends Component {
   render() {
     return (
       <>
-      <nav id="navbar">
+        <nav id="navbar">
           <div className="navbar">
             <Link to="/">
               <div className="nav-logo">
                 <svg
                   id="logo"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 100 100"
-                >
+                  viewBox="0 0 100 100">
                   <title>Loader Logo</title>
                   <g>
                     <g id="B" transform="translate(11.000000, 5.000000)">
@@ -69,26 +68,28 @@ export class Error extends Component {
                 <span className="line-btn"></span>
               </div>
               <ul className="nav-items">
-                <a className="nav-item" href="https://5f6712cdb87d14de5c529fc6--quirky-darwin-5ef605.netlify.app/#about">
+                <a
+                  className="nav-item"
+                  href="https://5f6712cdb87d14de5c529fc6--quirky-darwin-5ef605.netlify.app/#about">
                   <li>
                     <span className="text-secondary">01.</span>About
                   </li>
                 </a>
-                <a className="nav-item" href="https://5f6712cdb87d14de5c529fc6--quirky-darwin-5ef605.netlify.app/#education" onClick={this.navPage}>
+                <Link to="/#education" className="nav-item">
                   <li>
                     <span className="text-secondary">02.</span>Experience
                   </li>
-                </a>
-                <a className="nav-item" href="https://5f6712cdb87d14de5c529fc6--quirky-darwin-5ef605.netlify.app/#work">
+                </Link>
+                <Link to="/#work" className="nav-item">
                   <li>
                     <span className="text-secondary">03.</span>Work
                   </li>
-                </a>
-                <a className="nav-item" href="https://5f6712cdb87d14de5c529fc6--quirky-darwin-5ef605.netlify.app/#contact">
+                </Link>
+                <Link to="/#contact" className="nav-item">
                   <li>
                     <span className="text-secondary">04.</span>Contact
                   </li>
-                </a>
+                </Link>
                 <Link className="nav-item" to="/resume">
                   <li>
                     <button className="btn btn-primary">Resume</button>
@@ -98,30 +99,28 @@ export class Error extends Component {
             </div>
           </div>
         </nav>
-      
-      <div className="error-page">
-        <div className="wrapper">
-          <h1>404</h1>
-          <p>page not found</p>
-          <Link to="/">
-            <button className="btn btn-primary">Go Home</button>
-          </Link>
+
+        <div className="error-page">
+          <div className="wrapper">
+            <h1>404</h1>
+            <p>page not found</p>
+            <Link to="/">
+              <button className="btn btn-primary">Go Home</button>
+            </Link>
+          </div>
+          <div className="bubbles">
+            <img src={img} alt="bubble" />
+            <img src={img} alt="bubble" />
+            <img src={img} alt="bubble" />
+            <img src={img} alt="bubble" />
+            <img src={img} alt="bubble" />
+            <img src={img} alt="bubble" />
+            <img src={img} alt="bubble" />
+          </div>
         </div>
-        <div className="bubbles">
-          <img src={img} alt="bubble" />
-          <img src={img} alt="bubble" />
-          <img src={img} alt="bubble" />
-          <img src={img} alt="bubble" />
-          <img src={img} alt="bubble" />
-          <img src={img} alt="bubble" />
-          <img src={img} alt="bubble" />
-        </div>
-      </div>
       </>
-    
-    )
+    );
   }
 }
 
-export default Error
-
+export default Error;

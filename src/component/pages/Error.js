@@ -68,13 +68,11 @@ export class Error extends Component {
                 <span className="line-btn"></span>
               </div>
               <ul className="nav-items">
-                <a
-                  className="nav-item"
-                  href="https://5f6712cdb87d14de5c529fc6--quirky-darwin-5ef605.netlify.app/#about">
+                <Link to="/#about" className="nav-item">
                   <li>
                     <span className="text-secondary">01.</span>About
                   </li>
-                </a>
+                </Link>
                 <Link to="/#education" className="nav-item">
                   <li>
                     <span className="text-secondary">02.</span>Experience

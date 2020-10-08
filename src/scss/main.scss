@@ -37,7 +37,6 @@ body {
   scroll-behavior: smooth;
   position: relative;
   outline: none;
-
 }
 
 #root {
@@ -45,7 +44,6 @@ body {
   flex-direction: column;
   min-height: 100%;
   min-width: 100%;
-  
 }
 
 a {
@@ -164,7 +162,6 @@ p {
       margin-right: 5px;
     }
   }
-
 }
 
 .error-page {
@@ -295,13 +292,12 @@ p {
   &-inner {
     min-height: 100vh;
     margin: 3rem 0;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 
     .title {
       margin-bottom: 3rem;
       display: flex;
       flex-direction: column;
-
 
       h1 {
         font-size: clamp(40px, 8vw, 70px);
@@ -321,182 +317,176 @@ p {
       min-height: 100vh;
 
       .timeline-container {
-          display: flex;
-          flex-direction: column;
-          position: relative;
+        display: flex;
+        flex-direction: column;
+        position: relative;
 
-          &::after {
-            position: absolute;
-            content: "";
-            background: $primaryColor;
-            width: 4px;
-            height: 100vh;
-            min-height: 100%;
-            left: calc(50% - 2px)
+        &::after {
+          position: absolute;
+          content: "";
+          background: $primaryColor;
+          width: 4px;
+          height: 100vh;
+          min-height: 100%;
+          left: calc(50% - 2px);
+        }
+
+        .timeline-item {
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 30px;
+          margin: 10px 0;
+          width: 50%;
+
+          &:nth-child(even) {
+            align-self: flex-end;
+            justify-content: flex-start;
+            padding-right: 0px;
+            padding-left: 30px;
           }
 
-          .timeline-item {
+          &-content {
+            max-width: 80%;
+            background: lighten($color: $bgDark, $amount: 5%);
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.8);
+            // min-width: 400px;
             display: flex;
-            justify-content: flex-end;
-            padding-right: 30px;
-            margin: 10px 0;
-            width: 50%;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 15px;
+            text-align: right;
+            position: relative;
 
-            &:nth-child(even) {
-              align-self: flex-end;
-              justify-content: flex-start;
-              padding-right: 0px;
-              padding-left: 30px;
+            &:hover {
+              box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.8),
+                -1px -1px 5px rgba($color: #000000, $alpha: 0.8);
             }
 
-            &-content{
-              max-width: 80%;
-              background: lighten($color: $bgDark, $amount: 5%);
-              border-radius: 5px;
-              box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.8);
-              // min-width: 400px;
+            .timeline-item-header {
+              width: 100%;
+              margin: 0.3rem 0;
               display: flex;
-              flex-direction: column;
-              align-items: flex-end;
-              padding: 15px;
-              text-align: right;
-              position: relative;
+              flex-direction: row;
+              justify-content: space-between;
 
-              &:hover {
-                box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.8), -1px -1px 5px rgba($color: #000000, $alpha: 0.8);
-              }
-
-              .timeline-item-header {
-                width: 100%;
-                margin: 0.3rem 0;
+              .tag {
+                text-transform: uppercase;
+                padding: 0.3rem 1rem;
+                border-radius: 5px;
+                color: #191919;
+                letter-spacing: 1px;
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-                .tag {
-                  text-transform: uppercase;
-                  padding: 0.3rem 1rem;
-                  border-radius: 5px;
-                  color: #191919;
-                  letter-spacing: 1px;
-                  display: flex;
-                  font-size: 14px;
-                  align-items: center;
-                  font-weight: 500;
-                }
-
+                font-size: 14px;
+                align-items: center;
+                font-weight: 500;
               }
-
-              .timeline-item-body {
-                padding: 5px 0;
-
-                .item-title {
-                  margin: 0.3rem 0;
-                  letter-spacing: 1.5px;
-                }
-
-                .item-decs {
-                  letter-spacing: 1px;
-                }
-              }
-
-              .timeline-item-footer {
-                width: 100%;
-                margin: 5px 0;
-                display: flex;
-                flex-direction: column;
-
-                .item-tools {
-                  font-size: 14px;
-                  font-family: monospace;
-                  margin-bottom: 0.5rem;
-                  color: $primaryColor;
-                }
-
-                .item-links {
-                  .fa{
-                    font-size: 1.2rem;
-                    margin-left: 0.5rem;
-                    cursor: pointer;
-                    @include easeInOut;
-
-                    &:hover {
-                      color: $primaryColor
-                    }
-                  }
-                  span {
-                    margin-left: 0.5rem;
-                  }
-                }
-              }
-
-              .circle {
-                height: 20px;
-                width: 20px;
-                background: $bgDark;
-                border: 3px solid $primaryColor;
-                border-radius: 50%;
-                position: absolute;
-                top: calc(50% - 10px);
-                right: -40px;
-                z-index: 5;
-              }
-
-              &::after {
-                content: "";
-                background: lighten($color: $bgDark, $amount: 5%);
-                width: 20px;
-                right: -10px;
-                top: calc(50% - 10px);
-                box-shadow: 1px -1px 1px rgba($color: #000000, $alpha: 0.5);
-                height: 20px;
-                position: absolute;
-                transform: rotate(45deg);
-              }
-
             }
-          } 
 
-          .timeline-item:nth-child(even) .timeline-item-content {
-            text-align: left !important;
-            align-items: flex-start;
+            .timeline-item-body {
+              padding: 5px 0;
+
+              .item-title {
+                margin: 0.3rem 0;
+                letter-spacing: 1.5px;
+              }
+
+              .item-decs {
+                letter-spacing: 1px;
+              }
+            }
 
             .timeline-item-footer {
+              width: 100%;
+              margin: 5px 0;
+              display: flex;
+              flex-direction: column;
+
+              .item-tools {
+                font-size: 14px;
+                font-family: monospace;
+                margin-bottom: 0.5rem;
+                color: $primaryColor;
+              }
+
               .item-links {
-                .fa{
-                  margin-left: auto;
-                  margin-right: 0.5rem;
-                  
+                .fa {
+                  font-size: 1.2rem;
+                  margin-left: 0.5rem;
+                  cursor: pointer;
+                  @include easeInOut;
+
+                  &:hover {
+                    color: $primaryColor;
+                  }
+                }
+                span {
+                  margin-left: 0.5rem;
                 }
               }
             }
 
             .circle {
-              right: auto;
-              left: -41px
+              height: 20px;
+              width: 20px;
+              background: $bgDark;
+              border: 3px solid $primaryColor;
+              border-radius: 50%;
+              position: absolute;
+              top: calc(50% - 10px);
+              right: -40px;
+              z-index: 5;
             }
 
             &::after {
-              left: -10px;
-              right: auto;
-              box-shadow: -1px 1px 1px rgba($color: #000000, $alpha: 0.5);
+              content: "";
+              background: lighten($color: $bgDark, $amount: 5%);
+              width: 20px;
+              right: -10px;
+              top: calc(50% - 10px);
+              box-shadow: 1px -1px 1px rgba($color: #000000, $alpha: 0.5);
+              height: 20px;
+              position: absolute;
+              transform: rotate(45deg);
             }
           }
         }
-      
 
-      
+        .timeline-item:nth-child(even) .timeline-item-content {
+          text-align: left !important;
+          align-items: flex-start;
+
+          .timeline-item-footer {
+            .item-links {
+              .fa {
+                margin-left: auto;
+                margin-right: 0.5rem;
+              }
+            }
+          }
+
+          .circle {
+            right: auto;
+            left: -41px;
+          }
+
+          &::after {
+            left: -10px;
+            right: auto;
+            box-shadow: -1px 1px 1px rgba($color: #000000, $alpha: 0.5);
+          }
+        }
+      }
     }
   }
 
   @media screen and(max-width:978px) {
-    &-inner  {
+    &-inner {
       .content {
         width: 98%;
         margin: 0 auto;
 
         .timeline-container {
-
           .timeline-item {
             width: 50%;
 
@@ -518,14 +508,13 @@ p {
     }
   }
 
-  @media screen and(max-width:768px){
-    &-inner  {
+  @media screen and(max-width:768px) {
+    &-inner {
       .content {
         width: 98%;
         margin: 0 auto;
 
         .timeline-container {
-
           &::after {
             position: absolute;
             content: "";
@@ -534,7 +523,7 @@ p {
             display: none;
             height: 100vh;
             min-height: 100%;
-            left: calc(50% - 1px)
+            left: calc(50% - 1px);
           }
 
           .timeline-item {
@@ -561,10 +550,7 @@ p {
               }
             }
           }
-
         }
-
-        
       }
     }
   }
@@ -577,10 +563,32 @@ p {
   color: $mainColor;
   margin: 0 auto;
   max-width: 1140px;
+  position: relative;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 0;
     line-height: 1;
+  }
+
+  .inprogress {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    background: rgb(255, 42, 0);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+
+    .fa {
+      margin-right: 10px;
+    }
   }
 
   .profile {
@@ -588,11 +596,10 @@ p {
     display: flex;
     padding: 3rem;
     max-width: 900px;
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-top: 60px;
     padding-bottom: 4rem;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
-
 
     .profile__left {
       flex: 1.8;
@@ -654,7 +661,6 @@ p {
         list-style: none;
 
         li {
-
           margin-right: 0.8rem;
 
           a {
@@ -689,7 +695,7 @@ p {
   a {
     color: #181818;
   }
-  
+
   p {
     font-size: 14px;
     font-family: sans-serif;
@@ -702,7 +708,7 @@ p {
   .title {
     width: 100%;
     background: #dbd8d8;
-    
+
     h2 {
       color: #181818;
       padding: 0.2rem;
@@ -718,7 +724,7 @@ p {
   .intro {
     padding: 0.2rem;
     background: #dbd8d8;
-    
+
     h1 {
       font-size: clamp(1.5rem, 5vw, 3rem);
       line-height: 80px;
@@ -746,21 +752,19 @@ p {
           background: #555;
           outline: none;
           cursor: pointer;
-    
+
           .fa {
             font-size: 2rem;
             color: rgb(255, 128, 0);
           }
-          
+
           p {
             font-size: 12px;
             color: #fff;
           }
         }
       }
-  
     }
-
   }
 
   .skills {
@@ -800,7 +804,7 @@ p {
         line-height: 20px;
         font-family: monospace;
       }
-      
+
       ul {
         margin: 0.5rem 2rem;
 
@@ -814,15 +818,15 @@ p {
   .academics {
     table {
       margin: 1rem 0.5rem;
-      
-      tbody {
 
+      tbody {
         tr {
           td {
             padding: 0.2rem 0.5rem;
             font-size: 13px;
 
-            &:first-child, &:nth-child(3) {
+            &:first-child,
+            &:nth-child(3) {
               font-weight: 600;
             }
           }
@@ -873,7 +877,7 @@ p {
       letter-spacing: 1px;
       line-height: 19px;
     }
-    
+
     .title {
       margin-top: 1.5rem;
       h2 {
@@ -902,7 +906,7 @@ p {
     .skills {
       ul {
         li {
-            grid-gap: 25px;
+          grid-gap: 25px;
           p {
             font-size: 12px;
           }
@@ -932,7 +936,7 @@ p {
 
         ul {
           margin: 0rem 1rem;
-  
+
           li {
             line-height: 23px;
             font-size: 14px;
@@ -942,7 +946,7 @@ p {
     }
 
     .academics {
-      table{
+      table {
         margin: 0.5rem;
 
         tbody {
@@ -973,9 +977,7 @@ p {
         }
       }
     }
-
   }
-
 }
 
 .outer {
@@ -1007,31 +1009,31 @@ p {
       width: 80%;
       box-shadow: 1px 1px 2px $mainColor, inset 1px 1px 2px $mainColor;
 
-
       div {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            padding-bottom: 70px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 70px;
 
-            span {
-              text-transform: uppercase;
-              font-size: 24px;
-              font-weight: 300;
-              color: #fff;
-              text-shadow: 1px 1px 10px $mainColor;
-              letter-spacing: 1.5px;
-              line-height: 30px;
-              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            }
+        span {
+          text-transform: uppercase;
+          font-size: 24px;
+          font-weight: 300;
+          color: #fff;
+          text-shadow: 1px 1px 10px $mainColor;
+          letter-spacing: 1.5px;
+          line-height: 30px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         }
       }
+    }
   }
 
   //   div {
@@ -1066,9 +1068,10 @@ p {
   overflow: hidden;
   color: $mainColor;
   font-weight: bold;
-  font-size: 20px;text-transform: uppercase ;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;  
-  
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   .loader {
     position: absolute;
     top: 0;
@@ -1104,7 +1107,7 @@ p {
     transform: translate(-50%, -50%) translateY(20px) scale(1.5);
     overflow: hidden;
 
-    @media screen and(max-width: 599px){
+    @media screen and(max-width: 599px) {
       transform: translate(-50%, -50%) scale(1);
     }
 
@@ -1113,7 +1116,6 @@ p {
       width: 400px;
       height: 400px;
     }
-
 
     [data-typing] {
       position: absolute;
@@ -1171,7 +1173,7 @@ p {
       transform: rotate(90deg);
       animation: animate5 ease-in 3s normal;
     }
-    
+
     [data-typing="reactjs"] {
       top: 72px;
       right: 150px;
@@ -1214,7 +1216,6 @@ p {
       right: 150px;
       font-size: 25px;
       animation: animate11 ease-in 3s normal;
-
     }
 
     @keyframes animate1 {
@@ -1397,9 +1398,7 @@ p {
       }
     }
   }
-
 }
-
 
 .loading {
   font-family: "montserrat";
@@ -1442,7 +1441,8 @@ p {
     transform: rotate(240deg);
   }
 
-  &::before, &::after {
+  &::before,
+  &::after {
     content: "";
     width: 150px;
     height: 150px;
@@ -1453,7 +1453,6 @@ p {
     border-radius: 50%;
   }
 }
-
 
 main {
   margin: 0 auto;
@@ -1500,7 +1499,6 @@ main {
         line-height: 1.2;
         letter-spacing: 2px;
         color: #ccd6f6 !important;
-
       }
 
       .faded {
@@ -1626,7 +1624,6 @@ main {
         width: 100%;
         position: relative;
 
-        
         .img-file {
           border: 2px solid $primaryColor;
           position: absolute;
@@ -1635,7 +1632,7 @@ main {
           border-radius: 2px;
           width: 75% !important;
           transition: all 0.5s linear;
-          transition-delay: 1s;       
+          transition-delay: 1s;
 
           img {
             transform: translate(-15px, -15px);
@@ -1668,7 +1665,6 @@ main {
       height: 100%;
       margin: 0 auto;
 
-
       .content {
         display: grid;
         grid-template-columns: 25% 75%;
@@ -1681,7 +1677,8 @@ main {
               padding: 0.9rem;
               font-size: 1rem;
               opacity: 0.6;
-              border-left: 4px solid lighten($color: $primaryColor, $amount: 40%);
+              border-left: 4px solid
+                lighten($color: $primaryColor, $amount: 40%);
               transition: all 0.5s linear;
               font-weight: normal;
               cursor: pointer;
@@ -1758,9 +1755,8 @@ main {
             width: 100%;
             border-collapse: collapse;
 
-
             thead {
-              tr>th {
+              tr > th {
                 padding: 0.5rem;
                 text-align: left;
                 font-size: 1rem;
@@ -1833,10 +1829,11 @@ main {
         display: flex;
         flex-direction: row;
         margin: 2rem 0rem;
-        box-shadow: 1px 3px 5px rgba($color: #000000, $alpha: 0.9), -1px -1px 4px rgba($color: #000000, $alpha: 0.9);
+        box-shadow: 1px 3px 5px rgba($color: #000000, $alpha: 0.9),
+          -1px -1px 4px rgba($color: #000000, $alpha: 0.9);
         border-radius: 5px;
 
-        &:hover{
+        &:hover {
           box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 0.9);
         }
 
@@ -1950,13 +1947,11 @@ main {
 
             li {
               padding-left: 0;
-            padding-right: 0.9rem;
+              padding-right: 0.9rem;
               font-family: monospace;
               font-size: 1rem;
             }
           }
-
-          
         }
       }
 
@@ -2082,7 +2077,6 @@ main {
               }
 
               .project-desc {
-
                 h3 {
                   font-size: 1.1rem;
                   font-weight: 600;

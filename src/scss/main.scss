@@ -556,14 +556,37 @@ p {
   }
 }
 
+.inprogress {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  background: rgb(255, 42, 0);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  margin-top: 75px;
+
+  .fa {
+    margin-right: 10px;
+  }
+}
+
 .resume {
   width: 100%;
   -webkit-font-smoothing: antialised;
   // padding: 2rem;
+  box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.5);
   color: $mainColor;
-  margin: 0 auto;
-  max-width: 1140px;
+  max-width: 900px;
+  margin: 60px auto;
   position: relative;
+  background: $primary;
+
+  section {
+    padding: 3rem;
+  }
 
   h1,
   h2,
@@ -575,29 +598,10 @@ p {
     line-height: 1;
   }
 
-  .inprogress {
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    background: rgb(255, 42, 0);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 0;
-
-    .fa {
-      margin-right: 10px;
-    }
-  }
-
   .profile {
     background: $black;
     display: flex;
     padding: 3rem;
-    max-width: 900px;
-    margin: 0 auto;
-    margin-top: 60px;
     padding-bottom: 4rem;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
 
@@ -605,6 +609,7 @@ p {
       flex: 1.8;
       display: flex;
       align-items: center;
+      position: relative;
 
       .cd-headline > .cd-words-wrapper::after {
         background-image: linear-gradient(to right, $secondary, $success);
@@ -617,9 +622,30 @@ p {
         margin-bottom: 1rem;
       }
 
-      p {
-        color: $mild;
-        font-size: 14px;
+      div {
+        p {
+          color: $mild;
+          font-size: 14px;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 2px;
+            background: #f4f4f4;
+            animation: blink 0.5s infinite ease;
+          }
+
+          @keyframes blink {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
       }
 
       .avatar__block {
@@ -648,8 +674,11 @@ p {
           margin-bottom: 0.7rem;
           font-size: 14px;
 
+          display: flex;
+          align-items: center;
+
           svg {
-            font-size: 18px;
+            font-size: 22px;
             margin-right: 0.3rem;
           }
         }
@@ -662,9 +691,14 @@ p {
 
         li {
           margin-right: 0.8rem;
+          display: flex;
+          align-items: center;
 
           a {
             display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 36px;
             height: 36px;
             border-radius: 50%;
@@ -686,6 +720,157 @@ p {
           }
           &:nth-child(3) a {
             background: $dribble;
+          }
+        }
+      }
+    }
+  }
+
+  .section__heading {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $pure;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 1px rgba(40, 54, 95, 0.1);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 80px;
+      top: 28px;
+      left: 0;
+      border: 1px dotted $danger;
+    }
+  }
+
+  .resume__about {
+    .resume__content {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-gap: 5rem;
+
+      .content__left {
+        flex: 3;
+
+        button {
+          background: rgba(77, 121, 246, 0.1);
+          color: $info;
+          padding: 6px 12px;
+          font-size: 16px;
+          border: none;
+          line-height: 24px;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+
+      .content__right {
+        flex: 2;
+
+        p {
+          line-height: 1.6;
+          font-size: 14px;
+          color: $ternary;
+          letter-spacing: 0.1px;
+          margin-bottom: 0.5rem;
+
+          span:nth-child(1) {
+            width: 135px;
+            float: left;
+            font-weight: 500;
+            padding-right: 10px;
+            display: block;
+            position: relative;
+
+            &::after {
+              content: ":";
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+          }
+
+          span:nth-child(2) {
+            padding-left: 150px;
+            display: block;
+          }
+        }
+      }
+
+      h2 {
+        color: $info;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        margin-bottom: 1.6rem;
+      }
+
+      p {
+        color: $ternary;
+        font-size: 15px;
+        line-height: 1.6;
+        letter-spacing: 0.1px;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .resume__skills {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+
+      .skills__left {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .timeline__wrapper {
+          border-left: 2px dotted $darkBlue;
+        }
+
+        .timeline__item {
+          margin-bottom: 2.6rem;
+          margin-left: 15px;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 10px;
+            margin-left: -21px;
+            height: 10px;
+            border: 2px solid $info;
+            border-radius: 50%;
+          }
+        }
+
+        .heading {
+          margin-bottom: 2rem;
+
+          h5 {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: $mild;
+          }
+
+          svg {
+            color: $fade;
+            font-size: 52px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: $ternary;
+          line-height: 1.7;
+
+          .center {
+            color: $fade;
           }
         }
       }

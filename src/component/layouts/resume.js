@@ -3,6 +3,8 @@ import myUrl from "../../actions/myUrls";
 import logo from "../../img/logo.png";
 import { Link } from "react-router-dom";
 import Header from "../resume/Header";
+import About from "../resume/About";
+import Skills from "../resume/Skills";
 
 export class Resume extends Component {
   state = {
@@ -116,12 +118,14 @@ export class Resume extends Component {
           </div>
         </nav>
 
+        <div className="inprogress">
+          <i className="fa fa-exclamation" />
+          This page is still under progress
+        </div>
         <main className="resume">
           <Header />
-          <div className="inprogress">
-            <i className="fa fa-exclamation" />
-            This page is still under progress
-          </div>
+          <About />
+          <Skills />
         </main>
       </>
     );

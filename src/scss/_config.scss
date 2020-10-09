@@ -6,21 +6,21 @@ $mainColor: #a8b2d1;
 $primaryColor: rgb(100, 255, 218);
 
 /* Colors */
-  $primary : #0a192f;
-  $dark: #111;
-  $secondary: #2b55cc;
-  $info: #4d79f6;
-  $ternary: #848db3;
-  $pure: #eff2f9;
-  $fade: #7081b9;
-  $mild: #8997bd;
-  $footer: #212A4A;
-  $black: #060b1b;
-  $twitter: #4ac7ec;
-  $dribble: #ff5da0;
-  $success: #1ecab8;
-  $danger: #f1646c;
-  $darkBlue: #28365f;
+$primary: #1a253f;
+$dark: #111;
+$secondary: #2b55cc;
+$info: #4d79f6;
+$ternary: #848db3;
+$pure: #eff2f9;
+$fade: #7081b9;
+$mild: #8997bd;
+$footer: #212a4a;
+$black: #060b1b;
+$twitter: #4ac7ec;
+$dribble: #ff5da0;
+$success: #1ecab8;
+$danger: #f1646c;
+$darkBlue: #28365f;
 
 @mixin easeInOut {
   transition: all 0.5s ease-in-out;

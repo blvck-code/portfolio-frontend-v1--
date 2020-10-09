@@ -29,7 +29,11 @@ function Header() {
       currentText = texts[count];
       letter = currentText.slice(0, ++index);
 
-      document.querySelector(".resume-skills").textContent = letter;
+      const skills = document.querySelector(".resume-skills");
+
+      if (skills !== null) {
+        skills.textContent = letter;
+      }
       if (letter.length === currentText.length) {
         count++;
         index = 0;

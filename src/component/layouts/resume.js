@@ -120,7 +120,7 @@ export class Resume extends Component {
 
         <div className="inprogress">
           <i className="fa fa-exclamation" />
-          This page is still under progress
+          This page is still Under Construction
         </div>
         <main className="resume">
           <Header />

@@ -931,6 +931,9 @@ p {
         line-height: 24px;
         outline: none;
         cursor: pointer; }
+        .resume .resume__about .resume__content .content__left button:hover {
+          -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
     .resume .resume__about .resume__content .content__right {
       -webkit-box-flex: 2;
       -ms-flex: 2;
@@ -975,7 +978,8 @@ p {
     grid-template-columns: repeat(2, 1fr);
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    grid-gap: 2rem; }
     .resume .resume__skills .content .skills__left {
       display: -ms-grid;
       display: grid;
@@ -1012,6 +1016,39 @@ p {
         line-height: 1.7; }
         .resume .resume__skills .content .skills__left p .center {
           color: #7081b9; }
+    .resume .resume__skills .content .skills__right .skills__wrapper .skill__box {
+      margin-bottom: 4rem; }
+      .resume .resume__skills .content .skills__right .skills__wrapper .skill__box .progress__wrapper {
+        background: #20294a;
+        height: 6px;
+        width: 100%;
+        border: 2px solid #1a253f;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 1px 0.25px #4d79f6;
+        box-shadow: 0px 0px 1px 0.25px #4d79f6; }
+        .resume .resume__skills .content .skills__right .skills__wrapper .skill__box .progress__wrapper .progress__bar {
+          display: block;
+          height: 100%;
+          background: #4d79f6;
+          width: 0;
+          position: relative;
+          -webkit-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out; }
+          .resume .resume__skills .content .skills__right .skills__wrapper .skill__box .progress__wrapper .progress__bar .tooltip {
+            position: absolute;
+            right: -15px;
+            top: -30px;
+            margin-bottom: 10px;
+            color: #848db3;
+            font-size: 1rem;
+            text-transform: uppercase; }
+      .resume .resume__skills .content .skills__right .skills__wrapper .skill__box h4 {
+        color: #848db3;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        text-transform: uppercase; }
   .resume a {
     color: #181818; }
   .resume p {

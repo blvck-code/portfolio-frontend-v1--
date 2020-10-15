@@ -1,36 +1,24 @@
 import React, { Component } from "react";
 import Title from "../common/Title";
-import img from '../../img/img.jpg'
-
+import img from "../../img/img.jpg";
+import AOS from "aos";
 
 export class About extends Component {
-
-  
+  componentDidMount() {
+    AOS.init({
+      duration: 2000,
+    });
+  }
   render() {
-
-    // let counterSection = document.getElementById('about');
-
-    // let options = {
-    //   rootMargin: "0px 0px -100px 0px"
-    // }
-
-    // const sectionObserver = new IntersectionObserver(function(entries){
-    //   if(entries.isIntersecting) {
-    //     console.log(123);
-    //   }
-    // }, options)
-
-    // sectionObserver.observe(counterSection, null)
-
     return (
-      <section className="about" id="about" >
+      <section className="about" id="about">
         <div className="about-inner">
-          <Title title="About Me" num="01."/>
+          <Title title="About Me" num="01." />
           <div className="info">
-            <div className="summary" >
+            <div className="summary">
               <p>
-                Hello! I'm Maurice, a self taught developer(Fullstack)
-                based in Nairobi, Kenya.
+                Hello! I'm Maurice, a self taught developer(Fullstack) based in
+                Nairobi, Kenya.
               </p>
               <p>
                 I enjoy creating things that live on the internet, websites,
@@ -40,13 +28,17 @@ export class About extends Component {
               </p>
               <p>
                 Shortly after my fourth year in{" "}
-                <a href="https://www.ttu.ac.ke/" rel="noopener noreferrer"  target="_blank">
+                <a
+                  href="https://www.ttu.ac.ke/"
+                  rel="noopener noreferrer"
+                  target="_blank">
                   Taita Taveta University
                 </a>
                 , I gained alot of interest in programming and spent most of my
-                time reading programming materials and watching tutorials which has equipped
-                me with lots of skills that i have used to work on a wide
-                variety of interesting and meaningful projects on a daily basis.
+                time reading programming materials and watching tutorials which
+                has equipped me with lots of skills that i have used to work on
+                a wide variety of interesting and meaningful projects on a daily
+                basis.
               </p>
               <p>
                 Here are a few of technologies I've been working with recently:
@@ -88,7 +80,7 @@ export class About extends Component {
             </div>
             <div className="img">
               <div className="img-file">
-                  <img src={img} alt="MyImage"/>
+                <img src={img} alt="MyImage" />
               </div>
             </div>
           </div>

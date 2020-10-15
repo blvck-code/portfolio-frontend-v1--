@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 import logo from "../../img/logo.png";
 import { Link } from "react-router-dom";
+import AOS from "aos";
 
 export class Navbar extends Component {
   state = {
     showMenu: false,
   };
+
+  componentDidMount() {
+    AOS.init({
+      duration: 1000,
+    });
+  }
 
   toggleMenu = () => {
     const { showMenu } = this.state;
@@ -30,20 +37,19 @@ export class Navbar extends Component {
     menuBtn.classList.remove("close");
     navItem.classList.remove("close");
     this.setState({ showMenu: false });
-  }
+  };
 
   render() {
     // window.addEventListener('click', (e) => this.toggleMenu(e))
     return (
-      <nav id="navbar" data-aos="fade-down" data-aos-delay="50" data-aos-mirror="true" data-aos-duration="1000">
+      <nav id="navbar">
         <div className="navbar">
           <Link to="/">
             <div className="nav-logo">
               <svg
                 id="logo"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 100"
-              >
+                viewBox="0 0 100 100">
                 <title>Loader Logo</title>
                 <g>
                   <g id="B" transform="translate(11.000000, 5.000000)">
@@ -81,7 +87,10 @@ export class Navbar extends Component {
                   <span className="text-secondary">01.</span>About
                 </li>
               </a>
-              <a onClick={this.closeMenu} className="nav-item" href="#education">
+              <a
+                onClick={this.closeMenu}
+                className="nav-item"
+                href="#education">
                 <li>
                   <span className="text-secondary">02.</span>Experience
                 </li>

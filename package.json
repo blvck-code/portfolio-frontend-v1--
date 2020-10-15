@@ -13,6 +13,7 @@
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "classnames": "^2.2.6",
     "jspdf": "^2.1.1",
     "moment": "^2.27.0",
     "react": "^16.13.1",
@@ -33,6 +34,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "scroll-out": "^2.2.12",
+    "scrollmonitor-react": "^2.4.1",
     "uuid": "^8.2.0"
   },
   "scripts": {

@@ -14,6 +14,29 @@ function Skills() {
     });
   }, []);
 
+  const skills = [
+    {
+      name: "HTML & SCSS",
+      percent: 87,
+    },
+    {
+      name: "React.js",
+      percent: 76,
+    },
+    {
+      name: "Vanilla.js",
+      percent: 82,
+    },
+    {
+      name: "Django Backend",
+      percent: 86,
+    },
+    {
+      name: "UX/UI Design",
+      percent: 60,
+    },
+  ];
+
   return (
     <section className="resume__skills">
       <h1 className="section__heading">Education & Skills</h1>
@@ -26,19 +49,19 @@ function Skills() {
             </div>
             <div className="timeline__wrapper">
               <div className="timeline__item">
-                <p>1998 - 2005</p>
-                <p className="center">Highschool</p>
-                <p>Secondary Education</p>
+                <p>2015 - 2020</p>
+                <p className="center">University Education</p>
+                <p>Taita Taveta University</p>
               </div>
               <div className="timeline__item">
-                <p>2005 - 2008</p>
-                <p className="center">University</p>
-                <p>Bachelor of Business Information Technology</p>
+                <p>2011 - 2014</p>
+                <p className="center">Secondary Education</p>
+                <p>Chianda High School</p>
               </div>
               <div className="timeline__item">
-                <p>2008 - 2010</p>
-                <p className="center">Master</p>
-                <p>Master of Computer Science</p>
+                <p>2002 - 2010</p>
+                <p className="center">Primary Education</p>
+                <p>Karapul Primary School</p>
               </div>
             </div>
           </div>
@@ -49,57 +72,30 @@ function Skills() {
             </div>
             <div className="timeline__wrapper">
               <div className="timeline__item">
-                <p>1998 - 2005</p>
-                <p className="center">Highschool</p>
-                <p>Secondary Education</p>
+                <p>2019 - Present</p>
+                <p className="center">Freelancer</p>
+                <p>Nairobi</p>
               </div>
               <div className="timeline__item">
-                <p>2005 - 2008</p>
-                <p className="center">University</p>
-                <p>Bachelor of Business Information Technology</p>
-              </div>
-              <div className="timeline__item">
-                <p>2008 - 2010</p>
-                <p className="center">Master</p>
-                <p>Master of Computer Science</p>
+                <p>2019 - 2019</p>
+                <p className="center">Attachment</p>
+                <p>Siaya County Refferal Hospital</p>
               </div>
             </div>
           </div>
         </div>
         <div className="skills__right">
           <div className="skills__wrapper">
-            <div className="skill__box">
-              <h4>HTML & SCSS</h4>
-              <div className="progress__wrapper">
-                <span data-percent="78" className="progress__bar">
-                  <span className="tooltip">78%</span>
-                </span>
+            {skills.map((skill, idx) => (
+              <div key={idx} className="skill__box">
+                <h4>{skill.name}</h4>
+                <div className="progress__wrapper">
+                  <span data-percent={skill.percent} className="progress__bar">
+                    <span className="tooltip">{skill.percent}%</span>
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className="skill__box">
-              <h4>React.js</h4>
-              <div className="progress__wrapper">
-                <span data-percent="75" className="progress__bar">
-                  <span className="tooltip">75%</span>
-                </span>
-              </div>
-            </div>
-            <div className="skill__box">
-              <h4>Django Backend</h4>
-              <div className="progress__wrapper">
-                <span data-percent="80" className="progress__bar">
-                  <span className="tooltip">80%</span>
-                </span>
-              </div>
-            </div>
-            <div className="skill__box">
-              <h4>UX/UI Design</h4>
-              <div className="progress__wrapper">
-                <span data-percent="60" className="progress__bar">
-                  <span className="tooltip">60%</span>
-                </span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

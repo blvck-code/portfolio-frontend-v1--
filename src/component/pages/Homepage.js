@@ -16,6 +16,8 @@ import { connect } from "react-redux";
 import { fetchProjects } from "../../actions/projects";
 import Navbar from "../layouts/Navbar";
 
+document.title = "Portfolio | Oluoch Maurice Brian";
+
 function Homepage({ error }) {
   return (
     <>

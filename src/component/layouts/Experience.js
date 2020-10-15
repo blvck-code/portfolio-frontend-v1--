@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Title from "../common/Title";
+import AOS from "aos";
 
 export class Experience extends Component {
   handleEdu = (e) => {
@@ -8,6 +9,9 @@ export class Experience extends Component {
     e.target.classList.add("active");
     document.querySelector(`#${e.target.id}-content`).classList.add("show");
   };
+  componentDidMount() {
+    AOS.init();
+  }
 
   removeBorder = () => {
     document
@@ -22,7 +26,7 @@ export class Experience extends Component {
   };
   render() {
     return (
-      <section className="experience" id="education" >
+      <section className="experience" id="education">
         <div className="experience-inner">
           <Title title="Where I've Worked" num="02." />
           <div className="content">
@@ -31,8 +35,7 @@ export class Experience extends Component {
                 <li
                   className="edu-item active"
                   id="edu-1"
-                  onClick={this.handleEdu}
-                >
+                  onClick={this.handleEdu}>
                   Freelancing
                 </li>
                 <li className="edu-item" id="edu-2" onClick={this.handleEdu}>
@@ -42,13 +45,12 @@ export class Experience extends Component {
             </div>
             <div
               className="description edu-content-item show"
-              id="edu-1-content"
-            >
+              id="edu-1-content">
               <div className="title">
                 <h2>
                   Freelancer
                   <span>
-                    <i className="fa fa-at"></i>Home, Siaya County
+                    <i className="fa fa-at"></i>Home, Nairobi
                   </span>
                 </h2>
                 <p>2019 - Present</p>
@@ -56,23 +58,34 @@ export class Experience extends Component {
               <ul>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>Write modern, perfomant and robust code for a diverse array of client and internal projects</p>
-                </li>
-                <li>
-                  <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Designing, developing, testing and implementation of software solutions as per user requirements.
+                    Write modern, perfomant and robust code for a diverse array
+                    of client and internal projects
                   </p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>Work with a variety of different languages, frameworks and content management systems such as JavaScript, TypeScript,React, Django, Django Rest Framework, etc.</p>
+                  <p>
+                    Designing, developing, testing and implementation of
+                    software solutions as per user requirements.
+                  </p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>Communicate and collaborate with multi-disciplinary teamsof engineers, designers, producers, clients and stakeholders on a daily basis.</p>
+                  <p>
+                    Work with a variety of different languages, frameworks and
+                    content management systems such as JavaScript,
+                    TypeScript,React, Django, Django Rest Framework, etc.
+                  </p>
                 </li>
-             
+                <li>
+                  <i className="fa fa-angle-double-right"></i>{" "}
+                  <p>
+                    Communicate and collaborate with multi-disciplinary teamsof
+                    engineers, designers, producers, clients and stakeholders on
+                    a daily basis.
+                  </p>
+                </li>
               </ul>
             </div>
             <div className="description edu-content-item" id="edu-2-content">
@@ -88,38 +101,33 @@ export class Experience extends Component {
               <ul>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>
-                    Maintenance and repair of computer equipment.
-                  </p>
+                  <p>Maintenance and repair of computer equipment.</p>
+                </li>
+                <li>
+                  <i className="fa fa-angle-double-right"></i>{" "}
+                  <p>Provision of ICT support to the staff</p>
+                </li>
+                <li>
+                  <i className="fa fa-angle-double-right"></i>{" "}
+                  <p>Installing, configuring and maintaining ICT systems.</p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Provision of ICT support to the staff
+                    Installation, setting up and monitoring equipment
+                    performance
                   </p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>
-                    Installing, configuring and maintaining ICT systems. 
-                  </p>
+                  <p>Maintaining and configuring of systems and databases.</p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Installation, setting up and monitoring equipment performance
-                  </p>
-                </li>
-                <li>
-                  <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>
-                    Maintaining and configuring of systems and databases.
-                  </p>
-                </li>
-                <li>
-                  <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>
-                    Liaising with internal and external stakeholders to provide technical support while monitoring, analyzing and reporting on systems performance. Troubleshooting malfunction systems.
+                    Liaising with internal and external stakeholders to provide
+                    technical support while monitoring, analyzing and reporting
+                    on systems performance. Troubleshooting malfunction systems.
                   </p>
                 </li>
               </ul>

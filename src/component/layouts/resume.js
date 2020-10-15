@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 import Header from "../resume/Header";
 import About from "../resume/About";
 import Skills from "../resume/Skills";
+import Counter from "../resume/Counter";
+import Work from "../resume/Work";
+import Contact from "../resume/Contact";
+import Footer from "./Footer";
+import { connect } from "react-redux";
 
 export class Resume extends Component {
   state = {
@@ -30,6 +35,8 @@ export class Resume extends Component {
   };
 
   render() {
+    const { projects } = this.props;
+    document.title = "Resume | Oluoch Maurice Brian";
     return (
       <>
         <nav id="navbar">
@@ -126,10 +133,21 @@ export class Resume extends Component {
           <Header />
           <About />
           <Skills />
+          <Counter projects={projects} />
+          <Work projects={projects} />
+          <Contact />
+          <div className="footer">
+            <span>&copy; 2020. All rights reserved</span>
+          </div>
         </main>
+        <Footer />
       </>
     );
   }
 }
 
-export default Resume;
+const mapStateToProps = (state) => ({
+  projects: state.projects.projects,
+});
+
+export default connect(mapStateToProps)(Resume);

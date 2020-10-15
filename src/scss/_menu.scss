@@ -11,7 +11,6 @@
   align-items: center;
 }
 
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -27,25 +26,24 @@
       width: 50px;
       cursor: pointer;
       outline: none;
-      
+
       img {
-      outline: none;
+        outline: none;
         width: 100%;
         width: 42px;
         z-index: 10;
-        transform: translateY(-120%);
+        transform: translateY(-115%);
+        outline: none;
       }
 
       svg {
         z-index: -1;
         transform: translateX(-8%);
-      outline: none;
-
+        outline: none;
       }
     }
 
     &-menu {
-
       display: flex;
 
       .menu-btn {
@@ -60,19 +58,19 @@
         align-items: center;
         transition: all 1s linear;
 
-
         a {
           transition: all 500ms ease-in;
           padding: 0rem 0.7rem;
           font-size: 1rem;
-          font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+          font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+            monospace;
           color: $mainColor;
           cursor: pointer;
           transition: all 0.5s linear;
           border-bottom: 2px solid transparent;
           position: relative;
           color: rgb(204, 214, 246);
-          
+
           &:hover::after {
             transform: scaleX(1);
             transform-origin: right;

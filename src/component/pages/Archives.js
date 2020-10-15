@@ -51,6 +51,8 @@ export class Archives extends Component {
     const { projects } = this.props;
     const { isMounted } = this.state;
 
+    document.title = "Archives | Oluoch Maurice Brian";
+
     return (
       <>
         <nav id="navbar">

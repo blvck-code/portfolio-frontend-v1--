@@ -26,6 +26,8 @@ export class Error extends Component {
     }
   };
   render() {
+    document.title = "Error Page | Oluoch Maurice Brian";
+
     return (
       <>
         <nav id="navbar">

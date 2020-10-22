@@ -27,6 +27,19 @@ const data = [
     special: false,
   },
   {
+    id: 15,
+    date: "2020-10-22",
+    title: "Linked In Clone",
+    category: "Fullstack",
+    tools: "Django,  API, React redux, SCSS",
+    github: "https://github.com/blvck-code/linkedin-clone",
+    link: "https://linked-in.netlify.app",
+    image: "",
+    desc:
+      "This project is a linked in clone for developer. It allows developer add a post, create their profile and experience/ education background.",
+    special: false,
+  },
+  {
     id: 9,
     date: "2020-10-03",
     title: "Animated page",

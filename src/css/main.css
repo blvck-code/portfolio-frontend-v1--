@@ -2470,7 +2470,8 @@ main {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        margin: 2rem 0rem;
+        max-width: 897px;
+        margin: 2rem auto;
         -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(0, 0, 0, 0.9);
         box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(0, 0, 0, 0.9);
         border-radius: 5px; }
@@ -2671,6 +2672,7 @@ main {
             transform-origin: right; }
       main .projects-inner .row {
         width: 95%;
+        max-width: 897px;
         display: -ms-grid;
         display: grid;
         margin: 0 auto;

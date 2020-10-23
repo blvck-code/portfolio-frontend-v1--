@@ -8,29 +8,27 @@ import baseUrl from "./baseUrl";
 import projects from "../data";
 
 export const fetchProjects = () => (dispatch) => {
-  console.log(projects);
-  
-  dispatch({type: FETCH_PROJECTS_LOADING })
+  dispatch({ type: FETCH_PROJECTS_LOADING });
 
-  if(projects.length > 0){
+  if (projects.length > 1) {
     dispatch({
-    type: FETCH_PROJECTS_SUCCESS,
-    payload: projects,
-  });
+      type: FETCH_PROJECTS_SUCCESS,
+      payload: projects,
+    });
   }
-
-  
-
-  
-
-  // .catch((err) => {
-    
-  // });
 
   // axios
   //   .get(`${baseUrl}/api/projects`)
   //   .then((res) => {
-      
+  //     dispatch({
+  //       type: FETCH_PROJECTS_SUCCESS,
+  //       payload: res.data,
+  //     });
   //   })
-    
+  //   .catch((err) => {
+  //     dispatch({
+  //       type: FETCH_PROJECTS_ERROR,
+  //       payload: err,
+  //     });
+  //   });
 };

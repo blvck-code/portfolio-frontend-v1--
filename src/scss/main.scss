@@ -2317,7 +2317,8 @@ main {
       .work-item {
         display: flex;
         flex-direction: row;
-        margin: 2rem 0rem;
+        max-width: 897px;
+        margin: 2rem auto;
         box-shadow: 1px 3px 5px rgba($color: #000000, $alpha: 0.9),
           -1px -1px 4px rgba($color: #000000, $alpha: 0.9);
         border-radius: 5px;
@@ -2507,6 +2508,7 @@ main {
 
       .row {
         width: 95%;
+        max-width: 897px;
         display: grid;
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);

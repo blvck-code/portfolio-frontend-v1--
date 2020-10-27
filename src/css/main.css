@@ -567,8 +567,8 @@ p {
             max-width: 80%;
             background: #0e2444;
             border-radius: 5px;
-            -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -583,8 +583,8 @@ p {
             text-align: right;
             position: relative; }
             .archives-inner .content .timeline-container .timeline-item-content:hover {
-              -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8), -1px -1px 5px rgba(0, 0, 0, 0.8);
-              box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8), -1px -1px 5px rgba(0, 0, 0, 0.8); }
+              -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); }
             .archives-inner .content .timeline-container .timeline-item-content .timeline-item-header {
               width: 100%;
               margin: 0.3rem 0;
@@ -615,10 +615,12 @@ p {
             .archives-inner .content .timeline-container .timeline-item-content .timeline-item-body {
               padding: 5px 0; }
               .archives-inner .content .timeline-container .timeline-item-content .timeline-item-body .item-title {
-                margin: 0.3rem 0;
-                letter-spacing: 1.5px; }
+                margin: 0rem 0 0.9rem;
+                letter-spacing: 1.5px;
+                font-size: 1.1rem; }
               .archives-inner .content .timeline-container .timeline-item-content .timeline-item-body .item-decs {
-                letter-spacing: 1px; }
+                letter-spacing: 1.2px;
+                line-height: 1.1; }
             .archives-inner .content .timeline-container .timeline-item-content .timeline-item-footer {
               width: 100%;
               margin: 5px 0;

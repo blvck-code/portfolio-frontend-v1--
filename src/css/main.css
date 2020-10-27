@@ -3231,10 +3231,11 @@ footer {
     bottom: 50px;
     font-size: 1rem; }
   main header {
-    margin: 0 1rem;
+    margin: 0;
     min-height: 100vh; }
     main header .showcase {
-      width: 100% !important;
+      width: 95% !important;
+      margin: 0 auto;
       height: 100%;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -3244,10 +3245,11 @@ footer {
       main header .showcase h1 {
         font-size: clamp(40px, 5vw, 70px); }
   main .about {
-    margin: 0rem 1rem; }
+    margin: 0rem; }
     main .about-inner {
-      width: 100%;
-      height: 100%; }
+      width: 95%;
+      height: 100%;
+      margin: 0 auto; }
       main .about-inner .info {
         -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -3269,7 +3271,7 @@ footer {
           main .about-inner .info .img > .img-file:hover .contacts a {
             display: none; }
   main .experience {
-    margin: 3rem 1rem !important;
+    margin: 3rem 0rem !important;
     min-height: 100vh; }
     main .experience-inner {
       width: 95%;
@@ -3347,7 +3349,7 @@ footer {
           -ms-transform: translate(0, -100%);
           transform: translate(0, -100%);
           height: 320px;
-          background: rgba(10, 25, 47, 0.7); }
+          background: rgba(10, 25, 47, 0.8); }
           main .work-inner .work-item .body h2,
           main .work-inner .work-item:nth-child(even) .body h2 {
             font-size: 1.1rem;
@@ -3370,9 +3372,10 @@ footer {
       main .work-inner .work-item:nth-child(even) .summary {
         text-align: left; }
   main .projects {
-    margin: 5vh 1rem !important; }
+    margin: 5vh 0rem !important; }
     main .projects-inner {
-      width: 100%;
+      width: 95%;
+      margin: 0 auto;
       height: 100%; }
       main .projects-inner .title h2 {
         width: auto; }

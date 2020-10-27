@@ -246,11 +246,12 @@
 
   main {
     header {
-      margin: 0 1rem;
+      margin: 0;
       min-height: 100vh;
 
       .showcase {
-        width: 100% !important;
+        width: 95% !important;
+        margin: 0 auto;
         height: 100%;
         justify-content: center;
 
@@ -265,11 +266,12 @@
     }
 
     .about {
-      margin: 0rem 1rem;
+      margin: 0rem;
 
       &-inner {
-        width: 100%;
+        width: 95%;
         height: 100%;
+        margin: 0 auto;
 
         .info {
           grid-template-columns: 100%;
@@ -303,7 +305,7 @@
     }
 
     .experience {
-      margin: 3rem 1rem !important;
+      margin: 3rem 0rem !important;
       min-height: 100vh;
 
       &-inner {
@@ -408,7 +410,7 @@
             border-radius: 4px;
             transform: translate(0, -100%);
             height: 320px;
-            background: rgba($color: $bgDark, $alpha: 0.7);
+            background: rgba($color: $bgDark, $alpha: 0.8);
 
             h2 {
               font-size: 1.1rem;
@@ -441,10 +443,11 @@
     }
 
     .projects {
-      margin: 5vh 1rem !important;
+      margin: 5vh 0rem !important;
 
       &-inner {
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
         height: 100%;
 
         .title {
@@ -460,6 +463,7 @@
 
       &-inner {
         width: 100%;
+        // border: 1px solid #fff;
 
         .title {
           h1 {

@@ -106,7 +106,7 @@ export class Archives extends Component {
                 <a
                   onClick={this.closeMenu}
                   className="nav-item"
-                  href={`${myUrl}/#education`}
+                  href={`${myUrl}/#experience`}
                   onClick={this.navPage}>
                   <li>
                     <span className="text-secondary">02.</span>Experience

@@ -75,7 +75,7 @@ export class Error extends Component {
                     <span className="text-secondary">01.</span>About
                   </li>
                 </Link>
-                <Link to="/#education" className="nav-item">
+                <Link to="/#experience" className="nav-item">
                   <li>
                     <span className="text-secondary">02.</span>Experience
                   </li>

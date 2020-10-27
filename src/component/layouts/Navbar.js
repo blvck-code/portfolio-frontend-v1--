@@ -90,7 +90,7 @@ export class Navbar extends Component {
               <a
                 onClick={this.closeMenu}
                 className="nav-item"
-                href="#education">
+                href="#experience">
                 <li>
                   <span className="text-secondary">02.</span>Experience
                 </li>

@@ -26,7 +26,7 @@ export class Experience extends Component {
   };
   render() {
     return (
-      <section className="experience" id="education">
+      <section className="experience" id="experience">
         <div className="experience-inner">
           <Title title="Where I've Worked" num="02." />
           <div className="content">

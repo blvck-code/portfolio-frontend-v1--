@@ -90,8 +90,9 @@ export class Resume extends Component {
                 <a
                   onClick={this.closeMenu}
                   className="nav-item"
-                  href={`${myUrl}/#education`}
-                  onClick={this.navPage}>
+                  href={`${myUrl}/#experience`}
+                  // onClick={this.navPage}
+                >
                   <li>
                     <span className="text-secondary">02.</span>Experience
                   </li>

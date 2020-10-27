@@ -2156,7 +2156,7 @@ main {
         letter-spacing: 2px;
         color: #ccd6f6 !important; }
         main header .showcase h1.faded {
-          opacity: 0.5; }
+          opacity: 0.2; }
       main header .showcase .decs {
         font-size: 1rem;
         line-height: 1.5;
@@ -3331,8 +3331,7 @@ footer {
         height: 320px;
         -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-        border-radius: 4px;
-        border: 1px solid #fff; }
+        border-radius: 4px; }
         main .work-inner .work-item:hover .img,
         main .work-inner .work-item:nth-child(even):hover .img {
           opacity: 1; }

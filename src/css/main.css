@@ -555,6 +555,9 @@ p {
           padding-right: 30px;
           margin: 10px 0;
           width: 50%; }
+          @media screen and (max-width: 978px) {
+            .archives-inner .content .timeline-container .timeline-item {
+              padding-right: 10px; } }
           .archives-inner .content .timeline-container .timeline-item:nth-child(even) {
             -ms-flex-item-align: end;
             align-self: flex-end;
@@ -563,6 +566,9 @@ p {
             justify-content: flex-start;
             padding-right: 0px;
             padding-left: 30px; }
+            @media screen and (max-width: 978px) {
+              .archives-inner .content .timeline-container .timeline-item:nth-child(even) {
+                padding-left: 10px; } }
           .archives-inner .content .timeline-container .timeline-item-content {
             max-width: 80%;
             background: #0e2444;
@@ -688,10 +694,10 @@ p {
             box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 978px) {
     .archives-inner .content {
-      width: 98%;
+      width: 100%;
       margin: 0 auto; }
       .archives-inner .content .timeline-container .timeline-item {
-        width: 50%; }
+        width: 100%; }
         .archives-inner .content .timeline-container .timeline-item-content {
           width: 100% !important;
           max-width: 100%; }
@@ -702,10 +708,10 @@ p {
               letter-spacing: 1px; } }
   @media screen and (max-width: 768px) {
     .archives-inner .content {
-      width: 98%;
+      width: 100%;
       margin: 0 auto; }
       .archives-inner .content .timeline-container::after {
-        position: absolute;
+        position: none;
         content: "";
         background: #64ffda;
         width: 0px;
@@ -2791,7 +2797,8 @@ main {
                 -ms-flex-direction: row;
                 flex-direction: row;
                 font-size: 12px;
-                font-family: monospace; }
+                font-family: monospace;
+                color: #64ffda; }
       main .projects-inner button {
         display: block;
         margin: 4rem auto 0 auto; }

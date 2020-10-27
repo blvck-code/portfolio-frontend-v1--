@@ -338,11 +338,19 @@ p {
           margin: 10px 0;
           width: 50%;
 
+          @media screen and(max-width:978px) {
+            padding-right: 10px;
+          }
+
           &:nth-child(even) {
             align-self: flex-end;
             justify-content: flex-start;
             padding-right: 0px;
             padding-left: 30px;
+
+            @media screen and(max-width:978px) {
+              padding-left: 10px;
+            }
           }
 
           &-content {
@@ -484,12 +492,12 @@ p {
   @media screen and(max-width:978px) {
     &-inner {
       .content {
-        width: 98%;
+        width: 100%;
         margin: 0 auto;
 
         .timeline-container {
           .timeline-item {
-            width: 50%;
+            width: 100%;
 
             &-content {
               width: 100% !important;
@@ -512,12 +520,12 @@ p {
   @media screen and(max-width:768px) {
     &-inner {
       .content {
-        width: 98%;
+        width: 100%;
         margin: 0 auto;
 
         .timeline-container {
           &::after {
-            position: absolute;
+            position: none;
             content: "";
             background: $primaryColor;
             width: 0px;
@@ -2614,6 +2622,7 @@ main {
                   flex-direction: row;
                   font-size: 12px;
                   font-family: monospace;
+                  color: $primaryColor;
                 }
               }
             }

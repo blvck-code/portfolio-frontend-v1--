@@ -78,7 +78,7 @@
         transition: all 500ms ease-in;
         padding: 0rem 0.7rem;
         font-size: 1rem;
-        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
         color: #a8b2d1;
         cursor: pointer;
         -webkit-transition: all 0.5s linear;
@@ -204,7 +204,7 @@
   box-sizing: border-box; }
 
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 7px;
   background: transparent; }
 
 ::-webkit-scrollbar-thumb {
@@ -1513,7 +1513,7 @@ p {
           text-shadow: 1px 1px 10px #a8b2d1;
           letter-spacing: 1.5px;
           line-height: 30px;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
 
 .preloader {
   height: 100vh;
@@ -2478,13 +2478,13 @@ main {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        margin: 2rem auto;
-        -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(0, 0, 0, 0.9);
-        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(0, 0, 0, 0.9);
+        margin: 1rem auto;
+        -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
         border-radius: 5px; }
         main .work-inner .work-item:hover {
-          -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9); }
+          -webkit-box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.75); }
         main .work-inner .work-item .img {
           -webkit-box-flex: 60%;
           -ms-flex: 60%;
@@ -2680,8 +2680,7 @@ main {
             -ms-transform-origin: right;
             transform-origin: right; }
       main .projects-inner .row {
-        width: 95%;
-        max-width: 897px;
+        width: 100%;
         display: -ms-grid;
         display: grid;
         margin: 0 auto;
@@ -3318,10 +3317,10 @@ footer {
         main .experience-inner .content .description table tbody tr td {
           padding: 0.5rem 0.5rem 0.5rem 0; }
   main .work {
-    margin: 3rem 1rem;
+    margin: 3rem 0rem;
     min-height: 100vh; }
     main .work-inner {
-      width: 100%;
+      width: 98%;
       margin: 0 auto; }
       main .work-inner .work-item,
       main .work-inner .work-item:nth-child(even) {
@@ -3330,7 +3329,8 @@ footer {
         height: 320px;
         -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-        border-radius: 4px; }
+        border-radius: 4px;
+        border: 1px solid #fff; }
         main .work-inner .work-item:hover .img,
         main .work-inner .work-item:nth-child(even):hover .img {
           opacity: 1; }
@@ -3359,11 +3359,11 @@ footer {
           main .work-inner .work-item:nth-child(even) .body h2,
           main .work-inner .work-item:nth-child(even) .body ul,
           main .work-inner .work-item:nth-child(even) .body .links {
-            margin: 0 1rem; }
+            margin: 0.3rem 1rem !important; }
           main .work-inner .work-item .body .summary,
           main .work-inner .work-item:nth-child(even) .body .summary {
-            margin: 0;
-            padding: 10px;
+            margin: 0 1rem;
+            padding: 10px 0px;
             opacity: 1;
             background: none; }
       main .work-inner .work-item:nth-child(even) .summary {

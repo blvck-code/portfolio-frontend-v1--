@@ -21,7 +21,7 @@ export class Header extends Component {
   };
 
   render() {
-    document.title = "Portfolio | Oluoch Maurice Brian";
+    document.title = "Oluoch Maurice Brian";
     window.addEventListener("click", this.clickOutside);
 
     return (

@@ -204,7 +204,7 @@
   box-sizing: border-box; }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
   background: transparent; }
 
 ::-webkit-scrollbar-thumb {
@@ -2155,8 +2155,8 @@ main {
         line-height: 1.2;
         letter-spacing: 2px;
         color: #ccd6f6 !important; }
-      main header .showcase .faded {
-        color: #8794bf !important; }
+        main header .showcase h1.faded {
+          opacity: 0.5; }
       main header .showcase .decs {
         font-size: 1rem;
         line-height: 1.5;

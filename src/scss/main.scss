@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
   background: transparent;
 }
 
@@ -1991,11 +1991,12 @@ main {
         line-height: 1.2;
         letter-spacing: 2px;
         color: #ccd6f6 !important;
-      }
 
-      .faded {
-        color: darken($color: $mainColor, $amount: 10%) !important;
-        // display: none;
+        &.faded {
+          // color: darken($color: $mainColor, $amount: 10%) !important;
+          // display: none;
+          opacity: 0.5;
+        }
       }
 
       .decs {

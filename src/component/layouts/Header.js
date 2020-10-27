@@ -29,7 +29,7 @@ export class Header extends Component {
         <div className="showcase">
           <p>Hi, my name is</p>
           <h1>Brian Maurice Oluoch.</h1>
-          <h1>I build things for the web.</h1>
+          <h1 className="faded">I build things for the web.</h1>
           <p className="decs">
             I'm a developer based in Nairobi, Kenya specialized in <br />
             building (and occasionally designing) exceptional, high-quality

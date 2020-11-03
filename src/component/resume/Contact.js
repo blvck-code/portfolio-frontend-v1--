@@ -40,6 +40,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
         <div className="contact__right">
           <form>
             <div className="form__group">

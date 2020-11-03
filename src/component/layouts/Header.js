@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AOS from "aos";
+import { header } from "../../data";
 
 export class Header extends Component {
   componentDidMount() {
@@ -24,20 +25,30 @@ export class Header extends Component {
     document.title = "Oluoch Maurice Brian";
     window.addEventListener("click", this.clickOutside);
 
+    const {
+      titleOne,
+      titleTwo,
+      titleThree,
+      infOne,
+      infTwo,
+      infThree,
+      btn,
+    } = header;
+
     return (
-      <header id="header" data-aos="fade-left">
+      <header id="header">
         <div className="showcase">
-          <p>Hi, my name is</p>
-          <h1>Brian Maurice Oluoch.</h1>
-          <h1 className="faded">I build things for the web.</h1>
+          <p>{titleOne}</p>
+          <h1>{titleTwo}</h1>
+          <h1 className="faded">{titleThree}</h1>
           <p className="decs">
-            I'm a developer based in Nairobi, Kenya specialized in <br />
-            building (and occasionally designing) exceptional, high-quality
-            <br /> websites and their backends.
+            {infOne} <br />
+            {infTwo}
+            <br /> {infThree}
           </p>
 
           <button onClick={this.openModal} className="btn btn-primary">
-            Get In Touch
+            {btn}
           </button>
 
           <div className="wabbleIcon">

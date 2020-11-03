@@ -1,6 +1,6 @@
 #navbar {
   width: 100vw;
-  height: 70px;
+  height: 60px;
   top: 0px;
   z-index: 50;
   background: $bgDark;
@@ -8,6 +8,7 @@
   position: sticky;
   opacity: 0.9;
   display: flex;
+  animation: appearFromTop 1.2s ease-in;
   align-items: center;
 }
 
@@ -85,7 +86,7 @@
             transition: all 250ms ease-in;
             content: "";
             left: 0;
-            bottom: 0;
+            bottom: -5px;
             width: 90%;
             transform: scaleX(0);
             transform-origin: left;

@@ -28,6 +28,7 @@ export class Experience extends Component {
     return (
       <section className="experience" id="experience">
         <div className="experience-inner">
+          <h1 className="expe-text">Experience</h1>
           <Title title="Where I've Worked" num="02." />
           <div className="content">
             <div className="company">

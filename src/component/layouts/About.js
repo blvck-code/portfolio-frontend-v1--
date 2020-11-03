@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Title from "../common/Title";
 import img from "../../img/img.jpg";
 import AOS from "aos";
+import { skillsOne, skillsTwo } from "../../data";
 
 export class About extends Component {
   componentDidMount() {
@@ -13,6 +14,7 @@ export class About extends Component {
     return (
       <section className="about" id="about">
         <div className="about-inner">
+          <h1 className="blur-text">About</h1>
           <Title title="About Me" num="01." />
           <div className="info">
             <div className="summary">
@@ -45,36 +47,20 @@ export class About extends Component {
               </p>
               <div className="skills">
                 <ul>
-                  <li>
-                    <i className="fa fa-angle-double-right" />
-                    JavaScript (ES6+)
-                  </li>
-                  <li>
-                    <i className="fa fa-angle-double-right" />
-                    React
-                  </li>
-                  <li>
-                    <i className="fa fa-angle-double-right" />
-                    HTML &amp; (S)CSS
-                  </li>
-                  <li>
-                    <i className="fa fa-angle-double-right" />
-                    PostgreSQL
-                  </li>
+                  {skillsOne?.map((skill, idx) => (
+                    <li key={idx}>
+                      <i className="fa fa-angle-double-right" />
+                      {skill}
+                    </li>
+                  ))}
                 </ul>
                 <ul>
-                  <li>
-                    <i className="fa fa-angle-double-right" />
-                    Python
-                  </li>
-                  <li>
-                    <i className="fa fa-angle-double-right" />
-                    Django
-                  </li>
-                  <li>
-                    <i className="fa fa-angle-double-right" />
-                    MySQL
-                  </li>
+                  {skillsTwo?.map((skill, idx) => (
+                    <li key={idx}>
+                      <i className="fa fa-angle-double-right" />
+                      {skill}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

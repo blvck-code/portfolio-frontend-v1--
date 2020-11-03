@@ -17,23 +17,54 @@ function Skills() {
   const skills = [
     {
       name: "HTML & SCSS",
-      percent: 87,
+      percent: 80,
     },
     {
       name: "React.js",
-      percent: 76,
+      percent: 72,
     },
     {
       name: "Vanilla.js",
-      percent: 82,
+      percent: 78,
     },
     {
       name: "Django Backend",
-      percent: 86,
+      percent: 74,
     },
     {
       name: "UX/UI Design",
-      percent: 60,
+      percent: 55,
+    },
+  ];
+
+  const education = [
+    {
+      duration: "2015 - 2020",
+      level: "University Education",
+      school: "Taita Taveta University",
+    },
+    {
+      duration: "2011 - 2014",
+      level: "Secondary Education",
+      school: "Chianda High School",
+    },
+    {
+      duration: "2002 - 2010",
+      level: "Primary Education",
+      school: "Karapul Primary School",
+    },
+  ];
+
+  const experience = [
+    {
+      duration: "2019 - Present",
+      job: "Freelancer",
+      location: "Nairobi",
+    },
+    {
+      duration: "2019 - 2019",
+      job: "Attachment",
+      location: "Siaya County Refferal Hospital",
     },
   ];
 
@@ -48,21 +79,13 @@ function Skills() {
               <h5>Education</h5>
             </div>
             <div className="timeline__wrapper">
-              <div className="timeline__item">
-                <p>2015 - 2020</p>
-                <p className="center">University Education</p>
-                <p>Taita Taveta University</p>
-              </div>
-              <div className="timeline__item">
-                <p>2011 - 2014</p>
-                <p className="center">Secondary Education</p>
-                <p>Chianda High School</p>
-              </div>
-              <div className="timeline__item">
-                <p>2002 - 2010</p>
-                <p className="center">Primary Education</p>
-                <p>Karapul Primary School</p>
-              </div>
+              {education?.map(({ duration, level, school }, idx) => (
+                <div key={idx} className="timeline__item">
+                  <p>{duration}</p>
+                  <p className="center">{level}</p>
+                  <p>{school}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="inner__right">
@@ -71,16 +94,13 @@ function Skills() {
               <h5>Experience</h5>
             </div>
             <div className="timeline__wrapper">
-              <div className="timeline__item">
-                <p>2019 - Present</p>
-                <p className="center">Freelancer</p>
-                <p>Nairobi</p>
-              </div>
-              <div className="timeline__item">
-                <p>2019 - 2019</p>
-                <p className="center">Attachment</p>
-                <p>Siaya County Refferal Hospital</p>
-              </div>
+              {experience?.map(({ duration, job, location }, idx) => (
+                <div key={idx} className="timeline__item">
+                  <p>{duration}</p>
+                  <p className="center">{job}</p>
+                  <p>{location}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

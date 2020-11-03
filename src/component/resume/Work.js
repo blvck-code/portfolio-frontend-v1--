@@ -32,10 +32,6 @@ const Work = ({ projects }) => {
     });
   }, []);
 
-  const grabImg = (id) => {
-    console.log(id);
-  };
-
   return (
     <section className="resume__work">
       <h1 className="section__heading">My Works & Reviews</h1>
@@ -92,13 +88,15 @@ const Work = ({ projects }) => {
           </div>
 
           <div className="portfolio__wrapper">
-            {projects.map((item) =>
-              item.image ? (
+            {projects?.map((item) =>
+              item?.image ? (
                 <div
                   key={item.id}
-                  className={`portfolio__item  ${item.category.toLowerCase()}`}
+                  className={`portfolio__item  ${item?.category?.toLowerCase()}`}
                   id="design-content">
-                  <img onClick={() => grabImg(item.id)} src={item.image} />
+                  <a href={item?.link} target="_blank">
+                    <img alt="" src={item?.image} />
+                  </a>
                 </div>
               ) : (
                 ""

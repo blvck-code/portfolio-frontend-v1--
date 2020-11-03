@@ -10,6 +10,7 @@ function Projects({ projects, loading, fetchProjects }) {
     <section className="projects" id="projects">
       <div className="projects-inner">
         <div className="title">
+          <h1 className="project-text">All Projects</h1>
           <h2>Other Noteworthy Projects</h2>
           <Link to="/archive">
             <p>

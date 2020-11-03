@@ -126,10 +126,10 @@ export class Resume extends Component {
           </div>
         </nav>
 
-        <div className="inprogress">
+        {/* <div className="inprogress">
           <i className="fa fa-exclamation" />
           This page is still Under Construction
-        </div>
+        </div> */}
         <main className="resume">
           <Header />
           <About />

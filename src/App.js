@@ -24,7 +24,7 @@ function App({ fetchProjects }) {
   useEffect(() => {
     setTimeout(() => {
       setIsMounted(true);
-    }, 3000);
+    }, 3500);
   }, []);
 
   return (

@@ -2151,63 +2151,46 @@ p {
     opacity: 1; } }
 
 .loading {
-  font-family: "montserrat";
-  width: 150px;
-  height: 150px;
-  border-top: 10px solid #e74c3c;
-  position: relative;
-  border-radius: 50%;
-  -webkit-animation: rotate 2s linear infinite;
-  animation: rotate 2s linear infinite; }
+  width: 180px; }
+  .loading h1 {
+    position: relative;
+    margin: 0;
+    width: auto;
+    font-size: 2.5rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #383d52;
+    font-family: inherit; }
+    .loading h1::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      color: #01fe87;
+      -webkit-text-stroke: 0px #383d52;
+      border-right: 1px solid #01fe87;
+      overflow: hidden;
+      -webkit-animation: loading 6s linear infinite;
+      animation: loading 6s linear infinite; }
 
-@-webkit-keyframes rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+@-webkit-keyframes loading {
+  0%,
+  10%,
+  100% {
+    width: 0; }
+  70%,
+  90% {
+    width: 100%; } }
 
-@keyframes rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-  .loading span {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    line-height: 150px;
-    color: #fff;
-    -webkit-animation: rotate2 2s linear infinite;
-    animation: rotate2 2s linear infinite; }
-
-@-webkit-keyframes rotate2 {
-  to {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
-
-@keyframes rotate2 {
-  to {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
-  .loading::before {
-    border-top: 10px solid #e67e22;
-    -webkit-transform: rotate(120deg);
-    -ms-transform: rotate(120deg);
-    transform: rotate(120deg); }
-  .loading::after {
-    border-top: 10px solid #3498db;
-    -webkit-transform: rotate(240deg);
-    -ms-transform: rotate(240deg);
-    transform: rotate(240deg); }
-  .loading::before, .loading::after {
-    content: "";
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    left: 0;
-    top: -10px;
-    border-radius: 50%; }
+@keyframes loading {
+  0%,
+  10%,
+  100% {
+    width: 0; }
+  70%,
+  90% {
+    width: 100%; } }
 
 main {
   margin: 0 auto;
@@ -2268,11 +2251,11 @@ main {
         line-height: 1.2;
         letter-spacing: 2px;
         color: #ccd6f6 !important;
-        -webkit-animation: appearFromRight 1.5s ease-in;
-        animation: appearFromRight 1.5s ease-in; }
+        -webkit-animation: appearFromRight 1s ease-in;
+        animation: appearFromRight 1s ease-in; }
         main header .showcase h1.faded {
-          -webkit-animation: appearFromLeft 1.5s ease-in;
-          animation: appearFromLeft 1.5s ease-in;
+          -webkit-animation: appearFromLeft 1s ease-in;
+          animation: appearFromLeft 1s ease-in;
           opacity: 0.5; }
       main header .showcase .decs {
         font-size: 1rem;
@@ -3232,7 +3215,9 @@ main {
   margin-bottom: -60px;
   margin-left: -65px;
   opacity: 0.09;
-  z-index: 0; }
+  z-index: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc; }
   @media (max-width: 768px) {
     .blur-text {
       font-size: 50px;
@@ -3246,7 +3231,9 @@ main {
   margin-bottom: -50px;
   margin-left: -70px;
   opacity: 0.07;
-  z-index: 0; }
+  z-index: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc; }
   @media (max-width: 768px) {
     .expe-text {
       font-size: 45px;
@@ -3260,7 +3247,9 @@ main {
   margin-bottom: -50px;
   margin-left: -70px;
   opacity: 0.07;
-  z-index: 0; }
+  z-index: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc; }
   @media (max-width: 768px) {
     .work-text {
       font-size: 48px;
@@ -3274,7 +3263,9 @@ main {
   margin-bottom: -35px;
   margin-left: -90px;
   opacity: 0.07;
-  z-index: 0; }
+  z-index: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc; }
   @media (max-width: 768px) {
     .project-text {
       font-size: 50px;
@@ -3594,7 +3585,7 @@ footer {
     min-height: 100vh;
     width: 100vw; }
     main .work-inner {
-      width: 98%;
+      width: 95%;
       margin: 0 auto; }
       main .work-inner .work-item,
       main .work-inner .work-item:nth-child(even) {
@@ -3645,7 +3636,7 @@ footer {
     margin: 5vh 0rem !important;
     width: 100vw; }
     main .projects-inner {
-      width: 95%;
+      width: 92%;
       margin: 0 auto;
       height: 100%; }
       main .projects-inner .title h2 {

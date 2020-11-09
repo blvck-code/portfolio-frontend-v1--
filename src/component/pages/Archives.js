@@ -160,7 +160,7 @@ export class Archives extends Component {
                 </>
               ) : (
                 <div className="loading">
-                  <span>Loading...</span>
+                  <h1 data-text="Loading...">Loading...</h1>
                 </div>
               )}
             </div>

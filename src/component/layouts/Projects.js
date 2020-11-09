@@ -22,7 +22,7 @@ function Projects({ projects, loading, fetchProjects }) {
         <div className="row">
           {loading ? (
             <div className="loading">
-              <span>Loading...</span>
+              <h1 data-text="Loading...">Loading...</h1>
             </div>
           ) : (
             <>

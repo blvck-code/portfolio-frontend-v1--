@@ -76,7 +76,7 @@ function App({ fetchProjects }) {
             <Suspense
               fallback={
                 <div className="loading">
-                  <span>Loading...</span>
+                  <h1 data-text="Loading...">Loading...</h1>
                 </div>
               }>
               <Switch>

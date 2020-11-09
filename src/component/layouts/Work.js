@@ -14,7 +14,7 @@ function Work({ fetchProjects, items, loading }) {
         <div style={{ marginTop: 30 }} className="content">
           {loading ? (
             <div className="loading">
-              <span>Loading...</span>
+              <h1 data-text="Loading...">Loading...</h1>
             </div>
           ) : (
             <>

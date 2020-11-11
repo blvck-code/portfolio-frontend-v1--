@@ -11,6 +11,7 @@ import ContactsModal from "../common/ContactsModal";
 import Icons from "../layouts/Icons";
 import LeftSide from "../common/LeftSide";
 import RightSide from "../common/RightSide";
+import ScrollTop from "../common/scrollTop";
 
 import { connect } from "react-redux";
 import { fetchProjects } from "../../actions/projects";
@@ -32,6 +33,7 @@ function Homepage({ error }) {
         <Work />
         <Projects />
         <Contact />
+        <ScrollTop />
         <Icons />
         <RightSide />
         <div className="alerts">

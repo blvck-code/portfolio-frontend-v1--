@@ -6,6 +6,7 @@ import { fetchProjects } from "../../actions/projects";
 
 function Work({ fetchProjects, items, loading }) {
   const { projects } = items;
+
   return (
     <section className="work" id="work">
       <div className="work-inner">

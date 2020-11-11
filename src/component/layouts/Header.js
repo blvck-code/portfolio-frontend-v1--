@@ -50,12 +50,6 @@ export class Header extends Component {
           <button onClick={this.openModal} className="btn btn-primary">
             {btn}
           </button>
-
-          <div className="wabbleIcon">
-            <a href="#about">
-              <i className="fa fa-angle-double-down"></i>
-            </a>
-          </div>
         </div>
       </header>
     );

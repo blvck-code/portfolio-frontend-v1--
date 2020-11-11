@@ -10,6 +10,7 @@ export class About extends Component {
       duration: 2000,
     });
   }
+
   render() {
     return (
       <section className="about" id="about">

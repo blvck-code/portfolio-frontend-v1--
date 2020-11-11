@@ -3209,6 +3209,36 @@ main {
     transform: translateX(0);
     opacity: 1; } }
 
+.scroll-top {
+  position: fixed;
+  right: 100px;
+  bottom: 40px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  color: #01fe87;
+  border: 0.5px solid #01fe87;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .scroll-top {
+      right: 50px;
+      bottom: 40px;
+      height: 40px;
+      width: 40px; } }
+  .scroll-top .fa {
+    font-size: 12px;
+    font-weight: 300; }
+
 .blur-text {
   font-size: 80px;
   margin-top: -100px;
@@ -3247,6 +3277,7 @@ main {
   margin-bottom: -50px;
   margin-left: -70px;
   opacity: 0.07;
+  z-index: 0;
   z-index: 0;
   color: transparent;
   -webkit-text-stroke: 1px #ccc; }

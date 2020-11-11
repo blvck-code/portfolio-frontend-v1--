@@ -3034,6 +3034,34 @@ main {
   }
 }
 
+.scroll-top {
+  position: fixed;
+  right: 100px;
+  bottom: 40px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  color: #01fe87;
+  border: 0.5px solid #01fe87;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    right: 50px;
+    bottom: 40px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .fa {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
 .blur-text {
   font-size: 80px;
   margin-top: -100px;
@@ -3071,11 +3099,17 @@ main {
 }
 
 .work-text {
+  // font-size: 70px;
+  // margin-top: -100px;
+  // margin-bottom: -50px;
+  // margin-left: -70px;
+  // opacity: 0.07;
   font-size: 70px;
   margin-top: -100px;
   margin-bottom: -50px;
   margin-left: -70px;
   opacity: 0.07;
+  z-index: 0;
   z-index: 0;
   color: transparent;
   -webkit-text-stroke: 1px #ccc;

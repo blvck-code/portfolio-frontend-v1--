@@ -20,11 +20,6 @@ export class Contact extends Component {
           <button onClick={this.openModal} className="btn btn-primary">
             Say Hello
           </button>
-          <div className="wabbleIcon">
-            <a href="#header">
-              <i className="fa fa-angle-double-up"></i>
-            </a>
-          </div>
         </div>
       </section>
     );

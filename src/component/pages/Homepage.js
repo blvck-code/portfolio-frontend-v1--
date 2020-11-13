@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Footer from "../layouts/Footer";
 import Header from "../layouts/Header";
 import About from "../layouts/About";

@@ -10,6 +10,7 @@ import { connect } from "react-redux";
 import Resume from "./component/layouts/resume";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Status from "./component/common/status";
 
 const Archives = lazy(() => import("./component/pages/Archives"));
 
@@ -72,6 +73,7 @@ function App({ fetchProjects }) {
         </div>
       ) : (
         <>
+          <Status />
           <Router>
             <Suspense
               fallback={

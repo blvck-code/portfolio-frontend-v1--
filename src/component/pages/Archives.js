@@ -16,11 +16,7 @@ export class Archives extends Component {
   };
 
   componentDidMount() {
-    this.setState({isMounted:true})
-  }
-
-  componentDidMount() {
-    setTimeout(() => this.setState({ isMounted: true }), 0);
+    this.setState({ isMounted: true });
   }
 
   toggleMenu = () => {

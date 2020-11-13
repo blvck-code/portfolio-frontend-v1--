@@ -16,7 +16,7 @@ function Status() {
 
   return (
     <div className="status">
-      {online ? (
+      {!online ? (
         <div className="offline-state">
           <MdCloudOff />
           <h4>No internet connection</h4>

@@ -7,10 +7,10 @@ function Status() {
 
   useEffect(() => {
     window.addEventListener("online", () => {
-      setOnline(true);
+      navigator.onLine ? setOnline(true) : setOnline(false);
     });
     window.addEventListener("offline", () => {
-      setOnline(false);
+      !navigator.onLine ? setOnline(false) : setOnline(true);
     });
   }, [online]);
 

@@ -1,17 +1,16 @@
 import React from "react";
 
 function ScrollTop() {
-  const scrollToTop = () => {
-    let { scrollTop } = document.documentElement;
-    scrollTop = 0;
+  const showBtn = () => {
+    console.log(window.scrollY);
   };
 
+  window.addEventListener("scroll", showBtn);
+
   return (
-    <a href="#header">
-      <div className="scroll-top">
-        <i className="fa fa-chevron-up" />
-      </div>
-    </a>
+    <div onClick={() => window.scrollTo(0, 0)} className="scroll-top">
+      <i className="fa fa-chevron-up" />
+    </div>
   );
 }
 

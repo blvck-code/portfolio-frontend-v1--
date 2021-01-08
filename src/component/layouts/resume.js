@@ -10,6 +10,7 @@ import Work from "../resume/Work";
 import Contact from "../resume/Contact";
 import Footer from "./Footer";
 import { connect } from "react-redux";
+import ScrollToTop from "../common/ScrollToTop";
 
 export class Resume extends Component {
   state = {
@@ -131,6 +132,7 @@ export class Resume extends Component {
           This page is still Under Construction
         </div> */}
         <main className="resume">
+          <ScrollToTop />
           <Header />
           <About />
           <Skills />

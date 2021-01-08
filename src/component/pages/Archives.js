@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import logo from "../../img/logo.png";
 import myUrl from "../../actions/myUrls";
 import TimelineItem from "../layouts/TimelineItem";
+import ScrollToTop from "../common/ScrollToTop";
 
 export class Archives extends Component {
   state = {
@@ -55,6 +56,7 @@ export class Archives extends Component {
 
     return (
       <>
+        <ScrollToTop />
         <nav id="navbar">
           <div className="navbar">
             <Link to="/">

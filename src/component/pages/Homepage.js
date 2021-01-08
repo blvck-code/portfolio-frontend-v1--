@@ -16,6 +16,7 @@ import ScrollTop from "../common/scrollTop";
 import { connect } from "react-redux";
 import { fetchProjects } from "../../actions/projects";
 import Navbar from "../layouts/Navbar";
+import ScrollToTop from "../common/ScrollToTop";
 
 document.title = "Oluoch Maurice Brian";
 
@@ -23,6 +24,7 @@ function Homepage({ error }) {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <main>
         <Alerts />
         <ContactsModal />

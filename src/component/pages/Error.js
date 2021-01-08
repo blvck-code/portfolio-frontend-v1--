@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import img from "../../img/bubble.png";
 import logo from "../../img/logo.png";
+import ScrollToTop from "../common/ScrollToTop";
 
 export class Error extends Component {
   state = {
@@ -30,6 +31,7 @@ export class Error extends Component {
 
     return (
       <>
+        <ScrollToTop />
         <nav id="navbar">
           <div className="navbar">
             <Link to="/">

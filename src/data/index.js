@@ -22,6 +22,19 @@ export const skillsTwo = ["Python", "Django", "MySQL"];
 
 const data = [
   {
+    id: 53,
+    date: "2020-04-19",
+    title: "Luxury Silk Backend APIs",
+    category: "Backend",
+    tools: "Django, Django RestFramework",
+    github: "https://github.com/blvck-code/luxury-silk",
+    link: "http://oluoch.pythonanywhere.com/",
+    image: null,
+    desc:
+      "This is backend APIs to upcoming Luxury Silk Ecommerce that is still under development. THIS PROJECT IS STILL UNDER DEVELOPMENT.",
+    special: true,
+  },
+  {
     id: 52,
     date: "2020-12-31",
     title: "Kababa Resort",

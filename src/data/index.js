@@ -1,5 +1,6 @@
 import img from "../img/kababa.jpg";
 import img2 from "../img/porfoliov2.jpg";
+import img3 from "../img/luxury.jpg";
 
 export const header = {
   titleOne: "Hi, my name is",
@@ -29,7 +30,7 @@ const data = [
     tools: "Django, Django RestFramework",
     github: "https://github.com/blvck-code/luxury-silk",
     link: "http://oluoch.pythonanywhere.com/",
-    image: null,
+    image: img3,
     desc:
       "This is backend APIs to upcoming Luxury Silk Ecommerce that is still under development. THIS PROJECT IS STILL UNDER DEVELOPMENT.",
     special: true,

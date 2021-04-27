@@ -30,7 +30,7 @@ const data = [
     category: "Frontend",
     tools: "React js, CSS, APIs",
     github: "https://github.com/blvck-code/luxurysilk",
-    link: "https://luxurysilk.netlify.app'",
+    link: "https://luxurysilk.netlify.app",
     image: img4,
     desc:
       "Luxury Silk is an ecommerce website where users can create account, make orders, enter delivery address and make payments.",

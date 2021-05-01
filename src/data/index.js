@@ -24,19 +24,6 @@ export const skillsTwo = ["Python", "Django", "MySQL"];
 
 const data = [
   {
-    id: 54,
-    date: "2020-04-27",
-    title: "Luxury Silk Frontend",
-    category: "Frontend",
-    tools: "React js, CSS, APIs",
-    github: "https://github.com/blvck-code/luxurysilk",
-    link: "https://luxurysilk.netlify.app",
-    image: img4,
-    desc:
-      "Luxury Silk is an ecommerce website where users can create account, make orders, enter delivery address and make payments.",
-    special: true,
-  },
-  {
     id: 53,
     date: "2020-04-19",
     title: "Luxury Silk Backend APIs",

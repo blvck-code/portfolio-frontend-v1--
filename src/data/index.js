@@ -2,6 +2,7 @@ import img from "../img/kababa.jpg";
 import img2 from "../img/porfoliov2.jpg";
 import img3 from "../img/luxury.jpg";
 import img4 from "../img/luxury2.jpg";
+import resort from "../img/resort.jpg";
 
 export const header = {
   titleOne: "Hi, my name is",
@@ -23,6 +24,19 @@ export const skillsOne = [
 export const skillsTwo = ["Python", "Django", "MySQL"];
 
 const data = [
+  {
+    id: 54,
+    date: "2021-05-01",
+    title: "Resort Beach",
+    category: "Hotel",
+    tools: "React Js, Context API",
+    github: "https://github.com/blvck-code/resort-beach",
+    link: "https://oluoch-resort-beach.netlify.app/",
+    image: resort,
+    desc: `
+      Resort beach is a hotel website that enables one to filter rooms with desired room conitions and price.`,
+    special: true,
+  },
   {
     id: 53,
     date: "2020-04-19",

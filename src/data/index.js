@@ -1,7 +1,7 @@
 import img from "../img/kababa.jpg";
 import img2 from "../img/porfoliov2.jpg";
 import img3 from "../img/luxury.jpg";
-import img4 from "../img/luxury2.jpg";
+import DisneyPlus from "../img/DisneyPlus.png";
 import resort from "../img/resort.jpg";
 import Valentinos from "../img/Valentinos.jpg";
 
@@ -25,6 +25,19 @@ export const skillsOne = [
 export const skillsTwo = ["Python", "Django", "MySQL"];
 
 const data = [
+  {
+    id: 56,
+    date: "2021-05-28",
+    title: "Disney+",
+    category: "Clone",
+    tools: "React js, Redux, Firebase",
+    github: "https://github.com/blvck-code/Disney",
+    link: "https://disney-f9ad8.web.app/",
+    image: DisneyPlus,
+    desc: `
+      Clone to Disney+ UI which is built with React js and Styled Components, and Google Auth from Firebase.`,
+    special: true,
+  },
   {
     id: 55,
     date: "2021-05-27",

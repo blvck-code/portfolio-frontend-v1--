@@ -1,5 +1,6 @@
 import React from "react";
 import AOS from "aos";
+import cs from "../../img/Oluoch_Maurice_Brian_Resume.pdf";
 
 function About() {
   const right = [

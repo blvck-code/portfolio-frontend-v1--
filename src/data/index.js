@@ -4,6 +4,7 @@ import img3 from "../img/luxury.jpg";
 import DisneyPlus from "../img/DisneyPlus.png";
 import resort from "../img/resort.jpg";
 import Valentinos from "../img/Valentinos.jpg";
+import equitorials from "../img/equitorials.jpg";
 
 export const header = {
   titleOne: "Hi, my name is",
@@ -17,14 +18,37 @@ export const header = {
 
 export const skillsOne = [
   "JavaScript (ES6+)",
-  "React",
+  "React js",
+  "Angular",
   "HTML & (S)CSS",
   "PostgreSQL",
+  "MySQL",
 ];
 
-export const skillsTwo = ["Python", "Django", "MySQL"];
+export const skillsTwo = [
+  "Python",
+  "Django",
+  "Flask",
+  "MySQL",
+  "PHP",
+  "Laravel",
+  "CodeIgniter",
+];
 
 const data = [
+  {
+    id: 57,
+    date: "2021-06-05",
+    title: "Equitorials",
+    category: "Clone",
+    tools: "Bootstrap, CSS, PHP",
+    github: "",
+    link: "https://equitortrails.co.ke/",
+    image: equitorials,
+    desc: `
+      This is a client project with the UI complete, currently working am working on the backend with Code Igniter.`,
+    special: true,
+  },
   {
     id: 56,
     date: "2021-05-28",

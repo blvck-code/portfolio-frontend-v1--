@@ -35,8 +35,11 @@ export class Experience extends Component {
               <ul>
                 <li
                   className="edu-item active"
-                  id="edu-1"
+                  id="edu-3"
                   onClick={this.handleEdu}>
+                  Killy Technologies
+                </li>
+                <li className="edu-item" id="edu-1" onClick={this.handleEdu}>
                   Freelancing
                 </li>
                 <li className="edu-item" id="edu-2" onClick={this.handleEdu}>
@@ -46,7 +49,48 @@ export class Experience extends Component {
             </div>
             <div
               className="description edu-content-item show"
-              id="edu-1-content">
+              id="edu-3-content">
+              <div className="title">
+                <h2>
+                  Killy Technologies
+                  <span>
+                    <i className="fa fa-at"></i>Utawala, Nairobi
+                  </span>
+                </h2>
+                <p>2020 - Present</p>
+              </div>
+              <ul>
+                <li>
+                  <i className="fa fa-angle-double-right"></i>{" "}
+                  <p>
+                    Creating backends with PHP to ready made UIs for our
+                    clients.
+                  </p>
+                </li>
+                <li>
+                  <i className="fa fa-angle-double-right"></i>{" "}
+                  <p>
+                    Working with a team to build a resful websites, working with
+                    react and Laravel APIs.
+                  </p>
+                </li>
+                <li>
+                  <i className="fa fa-angle-double-right"></i>{" "}
+                  <p>
+                    Adjusting admin dashboards with the server backends for
+                    ecommerce websites.
+                  </p>
+                </li>
+                <li>
+                  <i className="fa fa-angle-double-right"></i>{" "}
+                  <p>
+                    Meeting with clients to adjust with their neededs for their
+                    sites and corrections on the sites.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div className="description edu-content-item" id="edu-1-content">
               <div className="title">
                 <h2>
                   Freelancer
@@ -54,7 +98,7 @@ export class Experience extends Component {
                     <i className="fa fa-at"></i>Home, Nairobi
                   </span>
                 </h2>
-                <p>2019 - Present</p>
+                <p>2019 - 2021</p>
               </div>
               <ul>
                 <li>

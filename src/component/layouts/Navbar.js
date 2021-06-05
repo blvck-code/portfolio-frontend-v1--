@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "../../img/logo.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
+import cv from "../../img/Oluoch_Maurice_Brian_Resume.pdf";
 
 export class Navbar extends Component {
   state = {
@@ -105,11 +106,11 @@ export class Navbar extends Component {
                   <span className="text-secondary">04.</span>Contact
                 </li>
               </a>
-              <Link className="nav-item" to="/resume">
+              <a className="nav-item" href={cv}>
                 <li onClick={this.closeMenu}>
                   <button className="btn btn-primary">Resume</button>
                 </li>
-              </Link>
+              </a>
             </ul>
           </div>
         </div>

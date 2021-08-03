@@ -6,6 +6,7 @@ import resort from "../img/resort.jpg";
 import Valentinos from "../img/Valentinos.jpg";
 import equitorials from "../img/equitorials.jpg";
 import leadnow from "../img/leadnow.jpg";
+import tabaka from "../img/tabaka-hosp.jpg"
 
 export const header = {
   titleOne: "Hi, my name is",
@@ -37,6 +38,19 @@ export const skillsTwo = [
 ];
 
 const data = [
+  {
+    id: 59,
+    date: "2021-06-25",
+    title: "Tabaka Mission Hospital",
+    category: "Frontend",
+    tools: "Angular, CSS",
+    github: "",
+    link: "https://tabaka-mission-hospital.vercel.app/home",
+    image: tabaka,
+    desc: `
+      TMH is a client project built with Angular framework.`,
+    special: true,
+  },
   {
     id: 58,
     date: "2021-06-25",
@@ -74,7 +88,7 @@ const data = [
     image: DisneyPlus,
     desc: `
       Clone to Disney+ UI which is built with React js and Styled Components, and Google Auth from Firebase.`,
-    special: true,
+    special: false,
   },
   {
     id: 55,

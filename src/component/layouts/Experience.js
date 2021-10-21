@@ -150,7 +150,7 @@ export class Experience extends Component {
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>Responsible for adding the data from the APIs to the database and giving back status responses to the UI.</p>
+                  <p>Responsible for adding the data from the APIs to the database and giving back status responses to the UI</p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}

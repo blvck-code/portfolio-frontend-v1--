@@ -20,8 +20,7 @@ export const header = {
 
 export const skillsOne = [
   "JavaScript (ES6+)",
-  "React js",
-  "Angular",
+  "Angular 10",
   "HTML & (S)CSS",
   "PostgreSQL",
   "MySQL",
@@ -32,9 +31,6 @@ export const skillsTwo = [
   "Django",
   "Flask",
   "MySQL",
-  "PHP",
-  "Laravel",
-  "CodeIgniter",
 ];
 
 const data = [
@@ -45,7 +41,7 @@ const data = [
     category: "Frontend",
     tools: "Angular, CSS",
     github: "",
-    link: "https://tabaka-mission-hospital.vercel.app/home",
+    link: "https://tabaka-hos.vercel.app/home",
     image: tabaka,
     desc: `
       TMH is a client project built with Angular framework.`,

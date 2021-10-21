@@ -17,7 +17,7 @@
     "gsap": "^3.5.1",
     "jspdf": "^2.1.1",
     "moment": "^2.27.0",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-alert": "^7.0.2",
     "react-alert-template-basic": "^1.0.0",
     "react-dom": "^16.13.1",

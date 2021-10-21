@@ -37,13 +37,13 @@ export class Experience extends Component {
                   className="edu-item active"
                   id="edu-3"
                   onClick={this.handleEdu}>
-                  Killy Technologies
+                  Apple
                 </li>
                 <li className="edu-item" id="edu-1" onClick={this.handleEdu}>
-                  Freelancing
+                  Upwork
                 </li>
                 <li className="edu-item" id="edu-2" onClick={this.handleEdu}>
-                  Refferal Hospital
+                  Mobi Tech
                 </li>
               </ul>
             </div>
@@ -52,40 +52,36 @@ export class Experience extends Component {
               id="edu-3-content">
               <div className="title">
                 <h2>
-                  Killy Technologies
+                  Apple
                   <span>
-                    <i className="fa fa-at"></i>Utawala, Nairobi
+                    <i className="fa fa-at"></i>Ng'ong, Nairobi
                   </span>
                 </h2>
-                <p>2020 - Present</p>
+                <p>2021 - Present</p>
               </div>
               <ul>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Creating backends with PHP to ready made UIs for our
-                    clients.
+                    Responsible for system analysis, design, coding, testing, debugging and documentation.
                   </p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Working with a team to build a resful websites, working with
-                    react and Laravel APIs.
+                  Analyzed business requirement to translate functional requirement into technical requirements using MVC.
                   </p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Adjusting admin dashboards with the server backends for
-                    ecommerce websites.
+                  Made substantial changes to the architecture to improve performance of the Application.
                   </p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Meeting with clients to adjust with their neededs for their
-                    sites and corrections on the sites.
+                  Responsible for the layout design, create responsive webpage and implement dynamic features by Bootstrap.
                   </p>
                 </li>
               </ul>
@@ -98,7 +94,7 @@ export class Experience extends Component {
                     <i className="fa fa-at"></i>Home, Nairobi
                   </span>
                 </h2>
-                <p>2019 - 2021</p>
+                <p>2020 - 2020</p>
               </div>
               <ul>
                 <li>
@@ -138,41 +134,38 @@ export class Experience extends Component {
                 <h2>
                   Attachment
                   <span>
-                    <i className="fa fa-at"></i>Siaya County Refferal Hospital
+                    <i className="fa fa-at"></i>Utawala
                   </span>
                 </h2>
-                <p>2019 - 2019</p>
+                <p>2019 - 2020</p>
               </div>
               <ul>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>Maintenance and repair of computer equipment.</p>
+                  <p>Involved in development of the web application, converting to the emerging technologies.</p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>Provision of ICT support to the staff</p>
+                  <p>Developed custom web application interfaces using HTML and CSS3 to meet the requirements of the client.</p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>Installing, configuring and maintaining ICT systems.</p>
+                  <p>Responsible for adding the data from the APIs to the database and giving back status responses to the UI.</p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Installation, setting up and monitoring equipment
-                    performance
+                  Worked on development and releases of the production under Agile/Scrum Cycles
                   </p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
-                  <p>Maintaining and configuring of systems and databases.</p>
+                  <p>Developed several REST web services supporting to perform tasks using Angular and Bootstrap.</p>
                 </li>
                 <li>
                   <i className="fa fa-angle-double-right"></i>{" "}
                   <p>
-                    Liaising with internal and external stakeholders to provide
-                    technical support while monitoring, analyzing and reporting
-                    on systems performance. Troubleshooting malfunction systems.
+                  Enhanced existing web properties based on best practices and user-centered design.
                   </p>
                 </li>
               </ul>

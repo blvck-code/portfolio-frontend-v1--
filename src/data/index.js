@@ -35,6 +35,19 @@ export const skillsTwo = [
 
 const data = [
   {
+    id: 60,
+    date: "2021-11-03",
+    title: "NaiParq",
+    category: "Frontend",
+    tools: "Angular, SCSS, API's, Docker",
+    github: "",
+    link: "https://naiparq.co.ke/",
+    image: tabaka,
+    desc: `
+      NaiParq is an app meant to help motorist within Nairobi to easily spot partking spaces.`,
+    special: true,
+  },
+  {
     id: 59,
     date: "2021-06-25",
     title: "Tabaka Mission Hospital",
@@ -49,7 +62,7 @@ const data = [
   },
   {
     id: 58,
-    date: "2021-06-25",
+    date: "2021-06-14",
     title: "Leadnow",
     category: "Fullstack",
     tools: "Bootstrap, CSS, PHP",

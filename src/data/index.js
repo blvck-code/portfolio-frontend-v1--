@@ -6,7 +6,8 @@ import resort from "../img/resort.jpg";
 import Valentinos from "../img/Valentinos.jpg";
 import equitorials from "../img/equitorials.jpg";
 import leadnow from "../img/leadnow.jpg";
-import tabaka from "../img/tabaka-hosp.jpg"
+import tabaka from "../img/tabaka-hosp.jpg";
+import naiparq from '../img/NaiParq.png';
 
 export const header = {
   titleOne: "Hi, my name is",
@@ -42,7 +43,7 @@ const data = [
     tools: "Angular, SCSS, API's, Docker",
     github: "",
     link: "https://naiparq.co.ke/",
-    image: tabaka,
+    image: naiparq,
     desc: `
       NaiParq is an app meant to help motorist within Nairobi to easily spot partking spaces.`,
     special: true,

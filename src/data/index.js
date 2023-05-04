@@ -49,7 +49,8 @@ const data = [
         link: "https://www.qbventures.africa/",
         image: qbv,
         desc: `
-            NaiParq is an app meant to help motorist within Nairobi to easily spot parking spaces.`,
+            qbVentures is a tech firm that strives to help African entrepreneurs achieve product-market fit and set them on a path to success in their venture-building journey. 
+            qbVentures expertise ranges from conceptualizing a product to launching and scaling it into a wildly successful company`,
         special: true,
     },
     {
@@ -74,7 +75,8 @@ const data = [
         link: "https://ebookings.vercel.app/",
         image: borana,
         desc: `
-      NaiParq is an app meant to help motorist within Nairobi to easily spot partking spaces.`,
+        Borana website helps both local and international tourist to book rooms and activities in advance before moving to the hotel.
+        `,
         special: true,
     },
     {

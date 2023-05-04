@@ -8,6 +8,10 @@ import equitorials from "../img/equitorials.jpg";
 import leadnow from "../img/leadnow.jpg";
 import tabaka from "../img/tabaka-hosp.jpg";
 import naiparq from '../img/NaiParq.png';
+import pms from '../img/projects/pms.png'
+import qbv from '../img/projects/qbv.png'
+import peapay from '../img/projects/peapay.png'
+import borana from '../img/projects/borana.png'
 
 export const header = {
   titleOne: "Hi, my name is",
@@ -35,6 +39,58 @@ export const skillsTwo = [
 ];
 
 const data = [
+    {
+        id: 62,
+        date: "2021-11-03",
+        title: "Naiparq Parking Management System",
+        category: "Frontend",
+        tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
+        github: "",
+        link: "https://naiparq.co.ke/",
+        image: qbv,
+        desc: `
+      NaiParq is an app meant to help motorist within Nairobi to easily spot partking spaces.`,
+        special: true,
+    },
+    {
+        id: 62,
+        date: "2021-11-03",
+        title: "Naiparq Parking Management System",
+        category: "Frontend",
+        tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
+        github: "",
+        link: "https://naiparq.co.ke/",
+        image: pms,
+        desc: `
+      NaiParq is an app meant to help motorist within Nairobi to easily spot partking spaces.`,
+        special: true,
+    },
+    {
+        id: 62,
+        date: "2021-11-03",
+        title: "Borana",
+        category: "Frontend",
+        tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
+        github: "",
+        link: "https://naiparq.co.ke/",
+        image: borana,
+        desc: `
+      NaiParq is an app meant to help motorist within Nairobi to easily spot partking spaces.`,
+        special: true,
+    },
+    {
+        id: 61,
+        date: "2021-11-03",
+        title: "Peapay",
+        category: "Frontend",
+        tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
+        github: "",
+        link: "https://naiparq.co.ke/",
+        image: peapay,
+        desc: `
+      NaiParq is an app meant to help motorist within Nairobi to easily spot partking spaces.`,
+        special: true,
+    },
   {
     id: 60,
     date: "2021-11-03",

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Title from "../common/Title";
 import AOS from "aos";
+import experience from "../../data/experience";
 
 export class Experience extends Component {
   handleEdu = (e) => {
@@ -31,6 +32,10 @@ export class Experience extends Component {
           <h1 className="expe-text">Experience</h1>
           <Title title="Where I've Worked" num="02." />
           <div className="content">
+            {/*{experience.map(item => */}
+
+
+            {/*)}*/}
             <div className="company">
               <ul>
                 <li

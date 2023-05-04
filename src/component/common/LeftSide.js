@@ -27,7 +27,7 @@ function LeftSide() {
         </div>
         <div>
           <a
-            href="https://twitter.com/blvck_code"
+            href="https://twitter.com/blvckchild95"
             target="_blank"
             className="fa fa-twitter"></a>
         </div>

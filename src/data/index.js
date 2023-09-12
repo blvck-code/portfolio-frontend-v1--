@@ -7,11 +7,12 @@ import Valentinos from "../img/Valentinos.jpg";
 import equitorials from "../img/equitorials.jpg";
 import leadnow from "../img/leadnow.jpg";
 import tabaka from "../img/tabaka-hosp.jpg";
-import naiparq from '../img/NaiParq.png';
-import pms from '../img/projects/pms.png'
-import qbv from '../img/projects/qbv.png'
-import peapay from '../img/projects/peapay.png'
-import borana from '../img/projects/borana.png'
+import naiparq from "../img/NaiParq.png";
+import pms from "../img/projects/pms.png";
+import qbv from "../img/projects/qbv.png";
+import peapay from "../img/projects/peapay.png";
+import borana from "../img/projects/borana.png";
+import sanaa from "../img/projects/sanaa.png";
 
 export const header = {
   titleOne: "Hi, my name is",
@@ -27,70 +28,137 @@ export const skillsOne = [
   "JavaScript (ES6+)",
   "Angular 10",
   "HTML & (S)CSS",
-  "PostgreSQL",
-  "MySQL",
+  "Mongo DB",
 ];
 
-export const skillsTwo = [
-  "Python",
-  "Django",
-  "Flask",
-  "MySQL",
+export const skillsTwo = ["Next JS", "React JS", "React Native", "Node JS"];
+
+export const previousJobs = [
+  {
+    title: "8teq",
+    jobPosition: "Associate Software Engineer",
+    location: "Nairobi, KE",
+    startDate: "Nov 2021",
+    endDate: "Current",
+    responsibilities: [
+      "Responsible for the layout design, create responsive webpage and implement dynamic features by\n" +
+        "Bootstrap and Tailwind CSS.",
+      "Marketing and guiding clients on how to use the website and mobile app.",
+      "Made substantial changes to the architecture to improve performance of the Application.",
+    ],
+  },
+  {
+    title: "Apple",
+    jobPosition: "Intern Frontend Developer",
+    location: "Remote, KE",
+    startDate: "Jan 2021",
+    endDate: "Sept 2021",
+    responsibilities: [
+      "Responsible for system analysis, design, coding, testing, debugging and documentation.",
+      "Analyzed business requirement to translate functional requirement into technical requirements\n" +
+        "using MVC.  ",
+      "Modified JavaScript to read client-side activities (events) and data and event validations.",
+      "Modified SQL procedures and triggers to obtain optimized output.",
+    ],
+  },
+  {
+    title: "Upwork Freelance",
+    jobPosition: "Software Developer",
+    location: "Remote, KE",
+    startDate: "May 2020",
+    endDate: "Dec 2020",
+    responsibilities: [
+      "User JIRA for bug tracking, GIT as a version tool and Jenkins for continuous integration of builds.",
+      "Managed and closed incident and task tickets in Service Now and provided weekly report.",
+      "Implemented HTTP request using RxJS Observable library to handle multiple values over time.",
+      "Enhanced application performance by Angular 8 Component based development in view of future\n" +
+        "Angular framework transitions.",
+    ],
+  },
+  {
+    title: "Mobi Tech",
+    jobPosition: "Full Stack Developer(Volunteer)",
+    location: "Nairobi, KE",
+    startDate: "Feb 2019",
+    endDate: "Dec 2019",
+    responsibilities: [
+      "Responsible for designing the backend models, creating the views and creating the APIs to be\n" +
+        "consumed in the frontend, using the MVC architecture.",
+      "Worked on development and releases of the production under Agile/Scrum Cycles.",
+      "Developed CSS styles to maintain the uniformity of all the screens throughout the design and\n" +
+        "development of the web pages from mock-ups",
+      "Responsible for ensuring the pattern consistency across all pages.",
+    ],
+  },
 ];
 
 const data = [
-    {
-        id: 62,
-        date: "2021-11-03",
-        title: "qbVentures",
-        category: "Frontend",
-        tools: "Angular, SCSS, API's, TailwindCSS",
-        github: "",
-        link: "https://www.qbventures.africa/",
-        image: qbv,
-        desc: `
+  {
+    id: 62,
+    date: "2021-11-03",
+    title: "sanaa",
+    category: "Frontend",
+    tools: "Next JS, NextAuth, Material UI, API's, TailwindCSS",
+    github: "",
+    link: "https://www.sanaa.ke",
+    image: sanaa,
+    desc: `
             qbVentures is a tech firm that strives to help African entrepreneurs achieve product-market fit and set them on a path to success in their venture-building journey. 
             qbVentures expertise ranges from conceptualizing a product to launching and scaling it into a wildly successful company`,
-        special: true,
-    },
-    {
-        id: 62,
-        date: "2022-11-25",
-        title: "Naiparq Parking Management System",
-        category: "Frontend",
-        tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
-        github: "",
-        link: "https://pms.naiparq.co.ke/",
-        image: pms,
-        desc: `NPMS is a management system for parking owners to manage and track down revenues from their parking spaces.`,
-        special: true,
-    },
-    {
-        id: 62,
-        date: "2021-11-03",
-        title: "Borana",
-        category: "Frontend",
-        tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
-        github: "",
-        link: "https://ebookings.vercel.app/",
-        image: borana,
-        desc: `
+    special: true,
+  },
+  {
+    id: 62,
+    date: "2021-11-03",
+    title: "qbVentures",
+    category: "Frontend",
+    tools: "Angular, SCSS, API's, TailwindCSS",
+    github: "",
+    link: "https://www.qbventures.africa/",
+    image: qbv,
+    desc: `
+            qbVentures is a tech firm that strives to help African entrepreneurs achieve product-market fit and set them on a path to success in their venture-building journey. 
+            qbVentures expertise ranges from conceptualizing a product to launching and scaling it into a wildly successful company`,
+    special: true,
+  },
+  {
+    id: 62,
+    date: "2022-11-25",
+    title: "Naiparq Parking Management System",
+    category: "Frontend",
+    tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
+    github: "",
+    link: "https://pms.naiparq.co.ke/",
+    image: pms,
+    desc: `NPMS is a management system for parking owners to manage and track down revenues from their parking spaces.`,
+    special: true,
+  },
+  {
+    id: 62,
+    date: "2021-11-03",
+    title: "Borana",
+    category: "Frontend",
+    tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
+    github: "",
+    link: "https://ebookings.vercel.app/",
+    image: borana,
+    desc: `
         Borana website helps both local and international tourist to book rooms and activities in advance before moving to the hotel.
         `,
-        special: true,
-    },
-    {
-        id: 61,
-        date: "2021-11-03",
-        title: "Peapay",
-        category: "Frontend",
-        tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
-        github: "",
-        link: "https://peapay.africa/#/",
-        image: peapay,
-        desc: `Businesses of all sizes – from start-ups to large enterprises – use Peapay to collect and make payments anywhere in Africa and across the globe.`,
-        special: true,
-    },
+    special: true,
+  },
+  {
+    id: 61,
+    date: "2021-11-03",
+    title: "Peapay",
+    category: "Frontend",
+    tools: "Angular, SCSS, API's, TailwindCSS, NGRX",
+    github: "",
+    link: "https://peapay.africa/#/",
+    image: peapay,
+    desc: `Businesses of all sizes – from start-ups to large enterprises – use Peapay to collect and make payments anywhere in Africa and across the globe.`,
+    special: true,
+  },
   {
     id: 60,
     date: "2021-11-03",

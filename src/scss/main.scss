@@ -2614,8 +2614,9 @@ main {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
     max-width: 1200px;
+    border: 1px solid white;
 
     &-inner {
       width: 80%;

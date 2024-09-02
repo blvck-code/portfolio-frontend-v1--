@@ -96,20 +96,6 @@ const data = [
   {
     id: 62,
     date: "2021-11-03",
-    title: "sanaa",
-    category: "Frontend",
-    tools: "Next JS, NextAuth, Material UI, API's, TailwindCSS",
-    github: "",
-    link: "https://www.sanaa.ke",
-    image: sanaa,
-    desc: `
-            qbVentures is a tech firm that strives to help African entrepreneurs achieve product-market fit and set them on a path to success in their venture-building journey. 
-            qbVentures expertise ranges from conceptualizing a product to launching and scaling it into a wildly successful company`,
-    special: true,
-  },
-  {
-    id: 62,
-    date: "2021-11-03",
     title: "qbVentures",
     category: "Frontend",
     tools: "Angular, SCSS, API's, TailwindCSS",

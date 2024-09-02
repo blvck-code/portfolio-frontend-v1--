@@ -198,19 +198,6 @@ const data = [
     special: false,
   },
   {
-    id: 56,
-    date: "2021-05-28",
-    title: "Disney+",
-    category: "UX/UI Design",
-    tools: "React js, Redux, Firebase",
-    github: "https://github.com/blvck-code/Disney",
-    link: "https://disney-f9ad8.web.app/",
-    image: DisneyPlus,
-    desc: `
-      Clone to Disney+ UI which is built with React js and Styled Components, and Google Auth from Firebase.`,
-    special: true,
-  },
-  {
     id: 55,
     date: "2021-05-27",
     title: "Valentinos Village Bistro",

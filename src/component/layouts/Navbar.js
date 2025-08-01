@@ -106,11 +106,7 @@ export class Navbar extends Component {
                   <span className="text-secondary">04.</span>Contact
                 </li>
               </a>
-              <a className="nav-item" href={cv}>
-                <li onClick={this.closeMenu}>
-                  <button className="btn btn-primary">Resume</button>
-                </li>
-              </a>
+             
             </ul>
           </div>
         </div>
